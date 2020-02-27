@@ -7,6 +7,7 @@
 .LSOverride
 # Icon must end with two \r
 Icon
+
 # Thumbnails
 ._*
 # Files that might appear in the root of a volume
@@ -19,6 +20,7 @@ Icon
 .com.apple.timemachine.donotpresent
 .vcode
 .codekit3
+
 # Directories potentially created on remote AFP share
 .AppleDB
 .AppleDesktop
@@ -28,10 +30,17 @@ Temporary Items
 config.codekit3
 prepros.config
 # Folders
+
 # Archivos PDF
 *.PDF
 *.pdf
 *.zip
 *rtf
 *txt
+
+# Archivos
+*.pug
+*.scss
+
+
 # End of https://www.gitignore.io/api/maco
