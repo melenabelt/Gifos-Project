@@ -142,6 +142,59 @@ li:hover::first-letter {
   color: #110038;
   opacity: 50%; }
 
+.busquedas {
+  background-color: #E6E6E6;
+  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF; }
+  .busquedas input:first-child {
+    background-color: #FFFFFF;
+    border: 1px solid #979797;
+    -webkit-box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+            box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+    padding: 13px 0 13px 16px;
+    width: 1057px;
+    font-family: "Chakra Petch", sans-serif; }
+  .busquedas input:first-child::-webkit-input-placeholder {
+    color: #B4B4B4; }
+  .busquedas input:first-child:-ms-input-placeholder {
+    color: #B4B4B4; }
+  .busquedas input:first-child::-ms-input-placeholder {
+    color: #B4B4B4; }
+  .busquedas input:first-child::placeholder {
+    color: #B4B4B4; }
+  .busquedas label {
+    background: #E6E6E6;
+    border: 1px solid #808080;
+    -webkit-box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+            box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+    padding: 9px 14px 9px 10px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 3px;
+    font-family: "Chakra Petch", sans-serif;
+    color: #B4B4B4; }
+    .busquedas label img {
+      position: relative;
+      top: 3px; }
+    .busquedas label input {
+      background: #E6E6E6;
+      border: none;
+      color: #B4B4B4;
+      margin-right: 8px; }
+
+.busqueda__titulo {
+  background-image: -webkit-gradient(linear, right top, left top, from(#F7C9F3), to(#4180F6));
+  background-image: linear-gradient(to left, #F7C9F3, #4180F6);
+  color: #FFFFFF;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  font-size: 0.875rem;
+  padding: 3px; }
+
+.busquedas__form {
+  padding: 0 18px 12px 15px; }
+
 .header__contenedor {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -160,3 +213,8 @@ li:hover::first-letter {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
+
+.busquedas {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 30px; }
