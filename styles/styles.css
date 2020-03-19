@@ -78,10 +78,9 @@ body {
   .contenedor__nav ul {
     display: none;
     list-style: none;
-    width: 167px;
+    width: 172px;
     height: auto;
-    margin: 0;
-    padding: 0; }
+    margin: 0; }
 
 .desplegar ul {
   display: block; }
@@ -193,11 +192,113 @@ li:hover::first-letter {
 .busquedas__form {
   padding: 0 18px 12px 15px; }
 
+.sugerencia h3 {
+  background: #fffafe;
+  border: 1px solid #E6BBE2;
+  -webkit-box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687d;
+          box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687d;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  padding: 7px;
+  font-size: 1rem; }
+
+.sugerencia__gif--titulo {
+  background-image: -webkit-gradient(linear, right top, left top, from(#F7C9F3), to(#4180F6));
+  background-image: linear-gradient(to left, #F7C9F3, #4180F6); }
+  .sugerencia__gif--titulo p {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    width: 100%;
+    margin: 0; }
+
+.sugerencia__gif__container {
+  padding: 4px 4px 0 4px;
+  background: #E6E6E6;
+  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF; }
+  .sugerencia__gif__container a {
+    color: #FFFFFF;
+    background: #4180F6;
+    border: 1px solid #4C2F99;
+    -webkit-box-shadow: inset -2px -2px 0 0 #284F99, inset 1px 1px 0 0 #FFFFFF;
+            box-shadow: inset -2px -2px 0 0 #284F99, inset 1px 1px 0 0 #FFFFFF;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 18px;
+    padding: 8px 10px;
+    text-decoration: none;
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    width: 90px;
+    height: 34px; }
+  .sugerencia__gif__container .img--gif:hover {
+    outline-style: dotted;
+    outline-width: 1px;
+    outline-offset: -4px; }
+  .sugerencia__gif__container a:hover {
+    outline-style: dotted;
+    outline-width: 1px;
+    outline-offset: -5px;
+    outline-color: #110038;
+    background-color: #3A72DB; }
+
+.tendencia h3 {
+  background: #fffafe;
+  border: 1px solid #E6BBE2;
+  -webkit-box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687d;
+          box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687d;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  padding: 7px;
+  font-size: 1rem; }
+
+.tendencia__gif__container {
+  background: #E6E6E6;
+  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF; }
+  .tendencia__gif__container p {
+    background-image: -webkit-gradient(linear, right top, left top, from(#F7C9F3), to(#4180F6));
+    background-image: linear-gradient(to left, #F7C9F3, #4180F6);
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    width: 100%;
+    margin: 0; }
+
 .contenedor__nav__temas {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-right: 16.5px; }
+
+.sugerencia__gif--titulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 280px;
+  padding: 3px; }
+
+.sugerencia__gif__container {
+  position: relative; }
+
+.sugerencia__gifs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
 
 .header__contenedor {
   display: -webkit-box;
@@ -222,3 +323,15 @@ li:hover::first-letter {
   width: 90%;
   margin: 0 auto;
   margin-top: 30px; }
+
+.sugerencia {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 64px; }
+
+.tendencia {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 64px; }
