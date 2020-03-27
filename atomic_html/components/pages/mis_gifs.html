@@ -2,36 +2,94 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../../styles/normalize.css">
-    <link rel="stylesheet" href="../../../styles/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch:300,300i,400,400i,500,500i,600,600i,700,700i&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chakra+Petch:300,300i,400,400i,500,500i,600,600i,700,700i&amp;display=swap">
+    <link rel="stylesheet" href="../../../styles/mis-gifos.css">
   </head>
   <body>
-    <header class="headers">
+    <header class="header">
       <div class="header__contador">
         <p>¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están./////// Número de visitas: 12.765.803</p>
-        <div class="header__logo"><img src="../../assets/arrow.svg" alt=""><img src="../../assets/gifOF_logo.png" alt=""></div>
+        <div class="header__logo"><a href="../../../index.html"><img src="../../assets/arrow.svg" alt=""></a><a href="../../../index.html"><img src="../../assets/gifOF_logo.png" alt=""></a></div>
       </div>
     </header>
-    <div class="crear-gifs">
-      <p>Crear Gifos</p>
-      <div class="crear-gifs__contenedor"><img src="../../assets/window_img.png" alt="">
-        <div class="contenedor__instrucciones">
-          <p>Aquí podrás crear tus propios guifos</p>
-          <p>Crear tu <strong>guifo </strong>es muy fácil, graba cualquier imagen con tu cámara y obtén guifos personalizados. Los pasos para crear tu guifo son:</p>
-          <ul>
-            <ol>Dar permisos de acceso a la cámara (sólo por el tiempo de uso)</ol>
-            <ol>Capturar tu momento guifo</ol>
-            <ol>Revisar el momento</ol>
-            <ol>Listo para subir y compartir!</ol>
-          </ul>
-          <p>¿Quieres comenzar a crear tu <strong>guifo </strong>ahora?</p>
-          <button class="contenedor__boton" id="contenedor__boton">Cancelar</button>
-          <button class="contenedor__boton" id="contenedor__boton">Comenzar</button>
+    <section class="crear-gifs" id="crear-gifs">
+      <p class="titulo">Crear Gifos</p>
+      <div class="crear-gifs__contenedor">
+        <label><img src="../../assets/window-img.png" alt=""></label>
+        <div class="contendor__instrucciones">
+          <p class="subTitulo">Aquí podrás crear tus propios guifos</p>
+          <p>Crear tu <span>guifo </span>es muy fácil, graba cualquier imagen con tu cámara y obtén guifos personalizados. Los pasos para crear tu guifo son:</p>
+          <ol>
+            <li><span class="item">1)</span>Dar permisos de acceso a la cámara (sólo por el tiempo de uso)</li>
+            <li><span class="item">2)</span>Capturar tu momento guifo</li>
+            <li><span class="item">3)</span>Revisar el momento</li>
+            <li><span class="item">4)</span>Listo para subir y compartir!</li>
+          </ol>
+          <p>¿Quieres comenzar a crear tu <span>guifo </span>ahora?</p>
         </div>
       </div>
-    </div>
-    <script src="undefinedindex.js"></script>
+      <div class="contenedor__boton">
+        <p class="contenedor__boton-1" id="contenedor__boton-1">Cancelar</p>
+        <p class="contenedor__boton-2" id="contenedor__boton-2">Comenzar</p>
+      </div>
+    </section>
+    <section class="mis--gifs">
+      <h3>Mis guifos</h3>
+      <div class="mis--gifs__contenedor">
+        <div class="gif__contenedor--1">
+          <div class="tendencia__gif__container"><img class="nivel-1" src="../../assets/288X298.jpg" alt="gifs tendencias"/>
+            <p></p>
+          </div>
+        </div>
+        <div class="gif__contenedor--1">
+          <div class="tendencia__gif__container"><img class="nivel-1" src="../../assets/288X298.jpg" alt="gifs tendencias"/>
+            <p></p>
+          </div>
+        </div>
+        <div class="gif__contenedor--1">
+          <div class="tendencia__gif__container"><img class="nivel-1" src="../../assets/288X298.jpg" alt="gifs tendencias"/>
+            <p></p>
+          </div>
+        </div>
+        <div class="gif__contenedor--1">
+          <div class="tendencia__gif__container"><img class="nivel-1" src="../../assets/288X298.jpg" alt="gifs tendencias"/>
+            <p></p>
+          </div>
+        </div>
+        <div class="gif__contenedor--2">
+          <div class="tendencia__gif__container"><img class="nivel-2" src="../../assets/592X298.jpg" alt="gifs tendencias"/>
+            <p></p>
+          </div>
+        </div>
+        <div class="gif__contenedor--1">
+          <div class="tendencia__gif__container"><img class="nivel-1" src="../../assets/288X298.jpg" alt="gifs tendencias"/>
+            <p></p>
+          </div>
+        </div>
+        <div class="gif__contenedor--1">
+          <div class="tendencia__gif__container"><img class="nivel-1" src="../../assets/288X298.jpg" alt="gifs tendencias"/>
+            <p></p>
+          </div>
+        </div>
+        <div class="gif__contenedor--1">
+          <div class="tendencia__gif__container"><img class="nivel-1" src="../../assets/288X298.jpg" alt="gifs tendencias"/>
+            <p></p>
+          </div>
+        </div>
+        <div class="gif__contenedor--1">
+          <div class="tendencia__gif__container"><img class="nivel-1" src="../../assets/288X298.jpg" alt="gifs tendencias"/>
+            <p></p>
+          </div>
+        </div>
+        <div class="gif__contenedor--2">
+          <div class="tendencia__gif__container"><img class="nivel-2" src="../../assets/592X298.jpg" alt="gifs tendencias"/>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="../../util/index.js"></script>
   </body>
 </html>

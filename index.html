@@ -2,99 +2,127 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chakra+Petch:300,300i,400,400i,500,500i,600,600i,700,700i&amp;display=swap">
     <link rel="stylesheet" href="./styles/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch:300,300i,400,400i,500,500i,600,600i,700,700i&amp;display=swap" rel="stylesheet">
   </head>
-  <body>
-    <header class="headers">
+  <body onload="contarVisita()">
+    <header class="header">
       <div class="header__contador">
-        <p>¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están./////// Número de visitas: 12.765.803</p>
+        <p>¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están./////// Número de visitas: <span id="visitas">12.765.803</span></p>
       </div>
-      <div class="header__contenedor"><img src="./atomic_html/assets/gifOF_logo.png" alt="logo gifos azul">
-        <div class="contenedor__botones"><a class="crear" href="#">Crear Guifos</a>
+      <div class="header__contenedor"><img src="./atomic_html/assets/gifOF_logo.png" alt="Logo">
+        <div class="contenedor__botones"><a class="crear" href="./atomic_html/components/pages/mis_gifs.html">Crear Guifos</a>
           <nav class="contenedor__nav" id="desplegar">
             <div class="contenedor__nav__temas">
-              <p id="desplegarMenu">Elegir tema</p><img id="desplegar2" src="./atomic_html/assets/dropdown.svg" alt="flecha hacia abajo"/>
+              <p id="desplegarMenu">Elegir Tema</p><img id="desplegar2" src="./atomic_html/assets/dropdown.svg" alt="flecha hacia abajo"/>
             </div>
             <ul>
               <li id="item--tema" onclick="ocultar()">Sailor Day</li>
               <li id="item--tema" onclick="ocultar()">Sailor Night</li>
             </ul>
-          </nav><a class="mis-guifos" href="#">Mis Guifos</a>
+          </nav><a class="mis-guifos" href="./atomic_html/components/pages/mis_gifs.html">Mis Guifos</a>
         </div>
       </div>
     </header>
-    <section class="busquedas">
+    <section class="busqueda">
       <p class="busqueda__titulo">Buscar</p>
-      <form class="busquedas__form">
-        <input type="text" placeholder="Busca gifs, hashtags, temas, busca lo que quieras…">
-        <label><img src="./atomic_html/assets/lupa_inactive.svg" alt="Lupa inactiva">
-          <input class="busqueda__boton" type="submit" value="Buscar">
+      <form class="busqueda__form">
+        <div class="busqueda__contenedor">
+          <input class="texto__busqueda" id="buscar" type="text" placeholder="Busca gifs, hashtags, temas, busca lo que quieras…">
+          <label class="busqueda__principal" id="busqueda__principal--rosa">
+            <div class="lupa" id="lupa"></div>
+            <input class="busquedad--boton" id="busqueda__principal--input" type="submit" value="Buscar">
+          </label>
+        </div>
+        <label class="busqueda__opciones" id="opciones">
+          <input class="opciones" type="button" value="Hola 1">
+          <input class="opciones" type="button" value="Hola 2">
+          <input class="opciones" type="button" value="Hola 3">
         </label>
       </form>
     </section>
     <section class="sugerencia">
       <h3>Hoy te sugerimos:</h3>
       <div class="sugerencia__gifs">
-        <div class="sugerencia__gif__container">
+        <div class="sugerencia__gifs__container">
           <div class="sugerencia__gif--titulo">
-            <p>Jonathanvanness</p><img src="./atomic_html/assets/button_close.svg" alt="Botón con x para cerrar"/>
-          </div><img class="img--gif" src="./atomic_html/assets/280X280.jpg" alt=""/><a href="#">Ver más...</a>
+            <p>#Jonathanvanness</p><img src="./atomic_html/assets/button_close.svg" alt="boton con una x para cerrar"/>
+          </div><img class="img--gif" src="./atomic_html/assets/280X280.jpg" alt="gif1"/><a href="#">Ver más...</a>
         </div>
-        <div class="sugerencia__gif__container">
+        <div class="sugerencia__gifs__container">
           <div class="sugerencia__gif--titulo">
-            <p>#SailorMercury</p><img src="./atomic_html/assets/button_close.svg" alt="Botón con x para cerrar"/>
-          </div><img class="img--gif" src="./atomic_html/assets/280X280.jpg" alt=""/><a href="#">Ver más...</a>
+            <p>#SailorMercury</p><img src="./atomic_html/assets/button_close.svg" alt="boton con una x para cerrar"/>
+          </div><img class="img--gif" src="./atomic_html/assets/280X280.jpg" alt="gif2"/><a href="#">Ver más...</a>
         </div>
-        <div class="sugerencia__gif__container">
+        <div class="sugerencia__gifs__container">
           <div class="sugerencia__gif--titulo">
-            <p>#FabFive</p><img src="./atomic_html/assets/button_close.svg" alt="Botón con x para cerrar"/>
-          </div><img class="img--gif" src="./atomic_html/assets/280X280.jpg" alt=""/><a href="#">Ver más...</a>
+            <p>#FabFive</p><img src="./atomic_html/assets/button_close.svg" alt="boton con una x para cerrar"/>
+          </div><img class="img--gif" src="./atomic_html/assets/280X280.jpg" alt="gif3"/><a href="#">Ver más...</a>
         </div>
-        <div class="sugerencia__gif__container">
+        <div class="sugerencia__gifs__container">
           <div class="sugerencia__gif--titulo">
-            <p>#Unicorns&amp;Rainbows</p><img src="./atomic_html/assets/button_close.svg" alt="Botón con x para cerrar"/>
-          </div><img class="img--gif" src="./atomic_html/assets/280X280.jpg" alt=""/><a href="#">Ver más...</a>
+            <p>#Unicorns&amp;Rainbows</p><img src="./atomic_html/assets/button_close.svg" alt="boton con una x para cerrar"/>
+          </div><img class="img--gif" src="./atomic_html/assets/280X280.jpg" alt="gif4"/><a href="#">Ver más...</a>
         </div>
       </div>
     </section>
     <section class="tendencia">
       <h3>Tendencias:</h3>
-      <div class="tendencia__gifs">
-        <div class="tendencia__gif__container"><img src="./atomic_html/assets/288X298.jpg" alt="gifs tendencias"/>
-          <p>#wink #puppie #cute #dog #hello #hi</p>
+      <div class="tendencias__gifs">
+        <div class="gif__contenedor--1">
+          <div class="tendencia__gif__container"><img class="nivel-1" src="./atomic_html/assets/288X298.jpg" alt="gifs tendencias"/>
+            <p>#wing #pupping #cute #dog #hellow #hi</p>
+          </div>
         </div>
-        <div class="tendencia__gif__container"><img src="./atomic_html/assets/288X298.jpg" alt="gifs tendencias"/>
-          <p>#wink #puppie #cute #dog #hello #hi</p>
+        <div class="gif__contenedor--1">
+          <div class="tendencia__gif__container"><img class="nivel-1" src="./atomic_html/assets/288X298.jpg" alt="gifs tendencias"/>
+            <p>#wing #pupping #cute #dog #hellow #hi</p>
+          </div>
         </div>
-        <div class="tendencia__gif__container"><img src="./atomic_html/assets/288X298.jpg" alt="gifs tendencias"/>
-          <p>#wink #puppie #cute #dog #hello #hi</p>
+        <div class="gif__contenedor--1">
+          <div class="tendencia__gif__container"><img class="nivel-1" src="./atomic_html/assets/288X298.jpg" alt="gifs tendencias"/>
+            <p>#wing #pupping #cute #dog #hellow #hi</p>
+          </div>
         </div>
-        <div class="tendencia__gif__container"><img src="./atomic_html/assets/288X298.jpg" alt="gifs tendencias"/>
-          <p>#wink #puppie #cute #dog #hello #hi</p>
+        <div class="gif__contenedor--1">
+          <div class="tendencia__gif__container"><img class="nivel-1" src="./atomic_html/assets/288X298.jpg" alt="gifs tendencias"/>
+            <p>#wing #pupping #cute #dog #hellow #hi</p>
+          </div>
         </div>
-        <div class="tendencia__gif__container"><img src="./atomic_html/assets/592X298.jpg" alt="gifs tendencias"/>
-          <p>#wink #puppie #cute #dog #hello #hi</p>
+        <div class="gif__contenedor--2">
+          <div class="tendencia__gif__container"><img class="nivel-2" src="./atomic_html/assets/592X298.jpg" alt="gifs tendencias"/>
+            <p>#wing #pupping #cute #dog #hellow #hi</p>
+          </div>
         </div>
-        <div class="tendencia__gif__container"><img src="./atomic_html/assets/288X298.jpg" alt="gifs tendencias"/>
-          <p>#wink #puppie #cute #dog #hello #hi</p>
+        <div class="gif__contenedor--1">
+          <div class="tendencia__gif__container"><img class="nivel-1" src="./atomic_html/assets/288X298.jpg" alt="gifs tendencias"/>
+            <p>#wing #pupping #cute #dog #hellow #hi</p>
+          </div>
         </div>
-        <div class="tendencia__gif__container"><img src="./atomic_html/assets/288X298.jpg" alt="gifs tendencias"/>
-          <p>#wink #puppie #cute #dog #hello #hi</p>
+        <div class="gif__contenedor--1">
+          <div class="tendencia__gif__container"><img class="nivel-1" src="./atomic_html/assets/288X298.jpg" alt="gifs tendencias"/>
+            <p>#wing #pupping #cute #dog #hellow #hi</p>
+          </div>
         </div>
-        <div class="tendencia__gif__container"><img src="./atomic_html/assets/288X298.jpg" alt="gifs tendencias"/>
-          <p>#wink #puppie #cute #dog #hello #hi</p>
+        <div class="gif__contenedor--1">
+          <div class="tendencia__gif__container"><img class="nivel-1" src="./atomic_html/assets/288X298.jpg" alt="gifs tendencias"/>
+            <p>#wing #pupping #cute #dog #hellow #hi</p>
+          </div>
         </div>
-        <div class="tendencia__gif__container"><img src="./atomic_html/assets/288X298.jpg" alt="gifs tendencias"/>
-          <p>#wink #puppie #cute #dog #hello #hi</p>
+        <div class="gif__contenedor--1">
+          <div class="tendencia__gif__container"><img class="nivel-1" src="./atomic_html/assets/288X298.jpg" alt="gifs tendencias"/>
+            <p>#wing #pupping #cute #dog #hellow #hi</p>
+          </div>
         </div>
-        <div class="tendencia__gif__container"><img src="./atomic_html/assets/592X298.jpg" alt="gifs tendencias"/>
-          <p>#wink #puppie #cute #dog #hello #hi</p>
+        <div class="gif__contenedor--2">
+          <div class="tendencia__gif__container"><img class="nivel-2" src="./atomic_html/assets/592X298.jpg" alt="gifs tendencias"/>
+            <p>#wing #pupping #cute #dog #hellow #hi</p>
+          </div>
         </div>
       </div>
     </section>
-    <script src="atomic_html/util/index.js"></script>
+    <script src="./atomic_html/util/index.js"></script>
   </body>
 </html>
