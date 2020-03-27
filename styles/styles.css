@@ -1,14 +1,19 @@
+@charset "UTF-8";
+/* ----------- ESTILOS PARA ATOMOS -----------  */
+/* ESTILOS GLOBALES */
 html {
   font-size: 1rem; }
 
 body {
   background-color: #fff4fd; }
 
+/* ------------------------------------- */
+/* ESTILOS HEADER */
 .header__contador p {
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 0.9rem;
-  background-image: -webkit-gradient(linear, right top, left top, from(#F7C9F3), to(#4180F6));
-  background-image: linear-gradient(to left, #F7C9F3, #4180F6);
+  background-image: -webkit-gradient(linear, right top, left top, from(#f7c9f3), to(#4180f6));
+  background-image: linear-gradient(to left, #f7c9f3, #4180f6);
   padding: 3px 0 4px 7px;
   -webkit-box-shadow: 0 1px 0 0 #110038;
           box-shadow: 0 1px 0 0 #110038;
@@ -17,60 +22,60 @@ body {
   margin-top: 0; }
 
 .crear {
-  background: #F7C9F3;
-  margin-right: 16px;
+  background: #f7c9f3;
   text-decoration: none;
   color: #110038;
   padding: 9px 26.5px;
   font-family: "Chakra Petch", sans-serif;
   font-weight: 400;
   border: 1px solid #110038;
-  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
-  justify-self: flex-end; }
+  -webkit-box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+          box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+  justify-self: flex-end;
+  margin-right: 16px; }
 
 .crear:hover {
   outline-style: dotted;
-  outline-width: 0.9px;
+  outline-width: 1px;
   outline-offset: -4px;
-  background-color: #E6BBE2; }
+  background: #e6bbe2; }
 
 .contenedor__nav__temas p {
-  background: #F7C9F3;
+  background: #f7c9f3;
   color: #110038;
-  padding: 9px 15.5px;
-  margin: 0;
   font-family: "Chakra Petch", sans-serif;
   font-weight: 400;
   border: 1px solid #110038;
-  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+          box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
   width: 131px;
-  text-align: center; }
+  margin: 0;
+  padding: 9px 15.5px;
+  text-align: center;
+  cursor: pointer; }
 
 .contenedor__nav__temas img {
-  background: #F7C9F3;
-  border-top: solid 1px #110038;
-  border-right: solid 1px #110038;
-  border-bottom: solid 1px #110038;
-  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+  border-top: 1px solid #110038;
+  border-right: 1px solid #110038;
+  border-bottom: 1px solid #110038;
+  background: #f7c9f3;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+          box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
   padding: 13px 15px;
-  justify-self: flex-end; }
+  justify-self: flex-end;
+  cursor: pointer; }
 
-.contenedor__nav__temas {
-  /* display: flex;
-  margin-right: 16.5px; */ }
-  .contenedor__nav__temas p:hover {
-    outline-style: dotted;
-    outline-width: 0.9px;
-    outline-offset: -4px;
-    background-color: #E6BBE2; }
-  .contenedor__nav__temas img:hover {
-    outline-style: dotted;
-    outline-width: 0.9px;
-    outline-offset: -4px;
-    background-color: #E6BBE2; }
+.contenedor__nav__temas p:hover {
+  outline-style: dotted;
+  outline-width: 1px;
+  outline-offset: -4px;
+  background: #e6bbe2; }
+
+.contenedor__nav__temas img:hover {
+  outline-style: dotted;
+  outline-width: 1px;
+  outline-offset: -4px;
+  background: #e6bbe2; }
 
 .contenedor__nav {
   display: inline-block;
@@ -89,30 +94,30 @@ ul {
   position: absolute;
   font-family: "Chakra Petch", sans-serif;
   font-weight: 400;
-  padding: 10px;
-  background: #E6E6E6;
-  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
-          box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF; }
+  padding: 15px 10px;
+  background: #e6e6e6;
+  -webkit-box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff;
+          box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff; }
 
 .contenedor__nav li {
-  background: #F0F0F0;
+  background: #f0f0f0;
   margin: 0;
   padding: 7px 0 7px 16px;
   border: 1px solid #808080;
-  -webkit-box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -1px -1px 0 0 #b4b4b4, inset 1px 1px 0 0 #ffffff;
+          box-shadow: inset -1px -1px 0 0 #b4b4b4, inset 1px 1px 0 0 #ffffff;
   cursor: pointer; }
 
 .contenedor__nav li:first-child {
-  margin: 0px 0px 10px 0px; }
+  margin: 0 0 10px 0; }
 
 .contenedor__nav li:hover {
-  background-color: #fff4fd;
-  border: 1px solid #CCA6C9;
-  -webkit-box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF; }
+  background: #fff4fd;
+  border: 1px solid #cca6c9;
+  -webkit-box-shadow: inset -1px -1px 0 0 #e6dce4, inset 1px 1px 0 0 #ffffff;
+          box-shadow: inset -1px -1px 0 0 #e6dce4, inset 1px 1px 0 0 #ffffff; }
 
-li:hover::first-letter {
+.contenedor__nav li:hover::first-letter {
   text-decoration: underline; }
 
 .mis-guifos {
@@ -134,97 +139,136 @@ li:hover::first-letter {
   color: #110038;
   opacity: 50%; }
 
-.busquedas {
-  background-color: #E6E6E6;
-  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
-          box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF; }
-  .busquedas input:first-child {
-    background-color: #FFFFFF;
-    border: 1px solid #979797;
-    -webkit-box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
-            box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
-    padding: 13px 0 13px 16px;
-    width: 1057px;
-    font-family: "Chakra Petch", sans-serif; }
-  .busquedas input:first-child::-webkit-input-placeholder {
-    color: #B4B4B4; }
-  .busquedas input:first-child:-ms-input-placeholder {
-    color: #B4B4B4; }
-  .busquedas input:first-child::-ms-input-placeholder {
-    color: #B4B4B4; }
-  .busquedas input:first-child::placeholder {
-    color: #B4B4B4; }
-  .busquedas label {
-    background: #E6E6E6;
-    border: 1px solid #808080;
-    -webkit-box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
-            box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
-    padding: 9px 14px 9px 10px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-left: 3px;
-    font-family: "Chakra Petch", sans-serif;
-    color: #B4B4B4;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
-    .busquedas label img {
-      position: relative;
-      top: 3px; }
-    .busquedas label input {
-      background: #E6E6E6;
-      border: none;
-      /* color: $grisNormal;
-        margin-right: 8px; */ }
-
+/* ------------------------------------- */
+/* ESTILOS SECCIÓN BUSQUEDA */
 .busqueda__titulo {
-  background-image: -webkit-gradient(linear, right top, left top, from(#F7C9F3), to(#4180F6));
-  background-image: linear-gradient(to left, #F7C9F3, #4180F6);
-  color: #FFFFFF;
+  background-image: -webkit-gradient(linear, right top, left top, from(#f7c9f3), to(#4180f6));
+  background-image: linear-gradient(to left, #f7c9f3, #4180f6);
+  color: #ffffff;
   font-family: "Chakra Petch", sans-serif;
   font-weight: 600;
   font-size: 0.875rem;
   padding: 5px;
-  -webkit-box-shadow: inset -2px 0 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
-          box-shadow: inset -2px 0 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF; }
+  -webkit-box-shadow: inset -2px 0 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff;
+          box-shadow: inset -2px 0 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff;
+  margin: 0;
+  width: 100%; }
 
-.busquedas__form {
-  padding: 0 18px 12px 15px; }
+.texto__busqueda::-webkit-input-placeholder {
+  color: #b4b4b4; }
 
+.texto__busqueda:-ms-input-placeholder {
+  color: #b4b4b4; }
+
+.texto__busqueda::-ms-input-placeholder {
+  color: #b4b4b4; }
+
+.texto__busqueda::placeholder {
+  color: #b4b4b4; }
+
+.texto__busqueda {
+  background: #ffffff;
+  border: 1px solid #979797;
+  -webkit-box-shadow: inset -2px -2px 0 0 #e6e6e6, inset 2px 2px 0 0 #000000;
+          box-shadow: inset -2px -2px 0 0 #e6e6e6, inset 2px 2px 0 0 #000000;
+  width: 90%;
+  padding: 13px 0 13px 16px;
+  font-family: "Chakra Petch", sans-serif;
+  margin-right: 2px;
+  outline: none; }
+
+.busqueda__principal input {
+  background: #e6e6e6;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #b4b4b4; }
+
+/* CLASE QUE SE AGREGA DESDE JS PARA EL ESTADO INPUT DEL BOTON */
+.busqueda__principal .busqueda__principal--rosa {
+  background: #f7c9f3;
+  color: #110038; }
+
+.busqueda__principal .lupa {
+  position: relative;
+  top: 3px;
+  width: 15px;
+  background-image: url("../atomic_html/assets/lupa_inactive.svg");
+  background-repeat: no-repeat;
+  height: 20px;
+  cursor: pointer; }
+
+/* CLASE QUE SE AGREGA DESDE JS PARA EL ESTADO INPUT DEL BOTON */
+.lupa--input {
+  position: relative;
+  top: 3px;
+  width: 15px;
+  background-image: url("../atomic_html/assets/lupa.svg");
+  background-repeat: no-repeat;
+  height: 20px;
+  cursor: pointer; }
+
+.opciones {
+  display: block;
+  background: #f0f0f0;
+  border: 1px solid #808080;
+  -webkit-box-shadow: inset -1px -1px 0 0 #b4b4b4, inset 1px 1px 0 0 #ffffff;
+          box-shadow: inset -1px -1px 0 0 #b4b4b4, inset 1px 1px 0 0 #ffffff;
+  width: 90%;
+  margin-bottom: 10px;
+  padding: 13px 0 13px 16px;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 16px;
+  text-align: start;
+  color: #110038;
+  letter-spacing: 0;
+  line-height: 22px;
+  margin-right: 2px;
+  outline: none;
+  cursor: pointer; }
+
+/* CLASE QUE SE AGREGA DESDE JS PARA EL ESTADO HOVER DE LAS OPCIONES */
+.opciones--hover {
+  background: #dbdbdb;
+  outline-style: dotted;
+  outline-width: 1px;
+  outline-offset: -4px; }
+
+/* ------------------------------------- */
+/* ESTILOS SECCIÓN SUGERENCIAS */
 .sugerencia h3 {
   background: #fffafe;
-  border: 1px solid #E6BBE2;
-  -webkit-box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687d;
-          box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687d;
+  border: 1px solid #e6bbe2;
+  -webkit-box-shadow: inset -2px -2px 0 0 #e6dce4, inset 2px 2px 0 0 #80687d;
+          box-shadow: inset -2px -2px 0 0 #e6dce4, inset 2px 2px 0 0 #80687d;
   font-family: "Chakra Petch", sans-serif;
   font-weight: 400;
   padding: 7px;
-  font-size: 1rem; }
+  font-size: 0.875rem; }
 
 .sugerencia__gif--titulo {
-  background-image: -webkit-gradient(linear, right top, left top, from(#F7C9F3), to(#4180F6));
-  background-image: linear-gradient(to left, #F7C9F3, #4180F6); }
+  background-image: -webkit-gradient(linear, right top, left top, from(#f7c9f3), to(#4180f6));
+  background-image: linear-gradient(to left, #f7c9f3, #4180f6); }
   .sugerencia__gif--titulo p {
     font-family: "Chakra Petch", sans-serif;
     font-weight: 600;
-    font-size: 1rem;
-    color: #FFFFFF;
+    font-size: 0.875rem;
+    color: #ffffff;
     letter-spacing: 0;
     width: 100%;
     margin: 0; }
 
-.sugerencia__gif__container {
+.sugerencia__gifs__container {
   padding: 4px 4px 0 4px;
-  background: #E6E6E6;
-  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
-          box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF; }
-  .sugerencia__gif__container a {
-    color: #FFFFFF;
-    background: #4180F6;
-    border: 1px solid #4C2F99;
-    -webkit-box-shadow: inset -2px -2px 0 0 #284F99, inset 1px 1px 0 0 #FFFFFF;
-            box-shadow: inset -2px -2px 0 0 #284F99, inset 1px 1px 0 0 #FFFFFF;
+  background: #e6e6e6;
+  -webkit-box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff;
+          box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff; }
+  .sugerencia__gifs__container a {
+    color: #ffffff;
+    background: #4180f6;
+    border: 1px solid #4c2f99;
+    -webkit-box-shadow: inset -2px -2px 0 0 #284f99, inset 1px 1px 0 0 #ffffff;
+            box-shadow: inset -2px -2px 0 0 #284f99, inset 1px 1px 0 0 #ffffff;
     font-family: "Chakra Petch", sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -238,48 +282,158 @@ li:hover::first-letter {
     left: 10px;
     width: 90px;
     height: 34px; }
-  .sugerencia__gif__container .img--gif:hover {
+  .sugerencia__gifs__container .img--gif:hover {
     outline-style: dotted;
     outline-width: 1px;
     outline-offset: -4px; }
-  .sugerencia__gif__container a:hover {
+  .sugerencia__gifs__container a:hover {
     outline-style: dotted;
     outline-width: 1px;
     outline-offset: -5px;
     outline-color: #110038;
-    background-color: #3A72DB; }
+    background-color: #3a72db; }
 
+/* ------------------------------------- */
+/* ESTILOS SECCIÓN TENDENCIAS */
 .tendencia h3 {
   background: #fffafe;
-  border: 1px solid #E6BBE2;
-  -webkit-box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687d;
-          box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687d;
+  border: 1px solid #e6bbe2;
+  -webkit-box-shadow: inset -2px -2px 0 0 #e6dce4, inset 2px 2px 0 0 #80687d;
+          box-shadow: inset -2px -2px 0 0 #e6dce4, inset 2px 2px 0 0 #80687d;
   font-family: "Chakra Petch", sans-serif;
   font-weight: 400;
   padding: 7px;
-  font-size: 1rem; }
+  font-size: 0.875rem; }
 
-.tendencia__gif__container {
-  background: #E6E6E6;
-  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
-          box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF; }
-  .tendencia__gif__container p {
-    background-image: -webkit-gradient(linear, right top, left top, from(#F7C9F3), to(#4180F6));
-    background-image: linear-gradient(to left, #F7C9F3, #4180F6);
-    font-family: "Chakra Petch", sans-serif;
-    font-weight: 600;
-    font-size: 1rem;
-    color: #FFFFFF;
-    letter-spacing: 0;
-    width: 100%;
-    margin: 0; }
+.tendencia__gif__container p {
+  display: none; }
 
+.gif__contenedor--1:hover p,
+.gif__contenedor--2:hover p {
+  display: block;
+  background-image: -webkit-gradient(linear, right top, left top, from(#f7c9f3), to(#4180f6));
+  background-image: linear-gradient(to left, #f7c9f3, #4180f6);
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #ffffff;
+  letter-spacing: 0;
+  width: 100%;
+  margin: 0;
+  position: relative;
+  bottom: 10px;
+  padding: 7px; }
+
+.nivel-2 {
+  width: 598px;
+  position: relative; }
+
+.nivel-1 {
+  width: 290px;
+  position: relative; }
+
+.nivel-1:hover,
+.nivel-2:hover {
+  outline-style: dotted;
+  outline-width: 1px;
+  outline-offset: -5px;
+  outline-color: #110038; }
+
+/* ------------------------------------- */
+/* -----------  ESTILOS PARA MOLECULAS -----------  */
+/* ESTILOS HEADER */
 .contenedor__nav__temas {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-right: 16.5px; }
 
+/* ------------------------------------- */
+/* ESTILOS SECCIÓN BUSQUEDA */
+.busqueda__form {
+  width: 100%; }
+
+.busqueda__contenedor {
+  background: #e6e6e6;
+  -webkit-box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px -2px 0 0 #ffffff;
+          box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px -2px 0 0 #ffffff;
+  padding: 9px 14px 9px 10px;
+  padding: 15px 12px;
+  margin-top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.busqueda__principal {
+  background: #e6e6e6;
+  border: 1px solid #808080;
+  -webkit-box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px -2px 0 0 #ffffff;
+          box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px -2px 0 0 #ffffff;
+  padding: 9px 14px 9px 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Chakra Petch", sans-serif;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer; }
+
+.busqueda__principal--borde {
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+          box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff; }
+
+.busqueda__principal--rosa {
+  background: #f7c9f3;
+  color: #110038;
+  cursor: pointer; }
+
+.busqueda__principal--rosa--active {
+  outline-style: dotted;
+  outline-width: 1px;
+  outline-offset: -4px;
+  background: #e6bbe2;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+          box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+  padding: 9px 14px 9px 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Chakra Petch", sans-serif;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer; }
+
+.busqueda__principal--active--input {
+  background: #e6bbe2;
+  cursor: pointer;
+  border: none;
+  outline: none; }
+
+.busqueda__opciones {
+  background-color: #e6e6e6;
+  -webkit-box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff;
+          box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff;
+  margin: 0;
+  padding: 15px 16px 5px 12px;
+  display: none; }
+
+.busqueda__opciones--mostrar {
+  display: block; }
+
+/* ------------------------------------- */
+/* ESTILOS SECCIÓN SUGERENCIAS*/
 .sugerencia__gif--titulo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -287,7 +441,7 @@ li:hover::first-letter {
   width: 280px;
   padding: 3px; }
 
-.sugerencia__gif__container {
+.sugerencia__gifs__container {
   position: relative; }
 
 .sugerencia__gifs {
@@ -300,6 +454,41 @@ li:hover::first-letter {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
 
+/* ------------------------------------- */
+/* ESTILOS SECCIÓN TENDENCIAS*/
+.tendencias__gifs {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (290px)[4];
+      grid-template-columns: repeat(4, 290px);
+  grid-gap: 16px 16px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.gif__contenedor--1 {
+  -ms-grid-column-span: 1;
+      grid-column-end: span 1; }
+
+.gif__contenedor--2 {
+  -ms-grid-column-span: 2;
+      grid-column-end: span 2; }
+
+.tendencia__gif__container {
+  display: inline-block; }
+
+.tendencia__gif__container:hover {
+  background: #e6e6e6;
+  -webkit-box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff;
+          box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff;
+  padding: 4px 4px 0px 4px; }
+
+/* ------------------------------------- */
+/* -----------  ESTILOS PARA ORGANISMOS -----------  */
+/* ESTILOS HEADER */
 .header__contenedor {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -307,31 +496,41 @@ li:hover::first-letter {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 44px 70.25px 0 70.25px;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  margin: 44px 70.25px 0 70.25px; }
   .header__contenedor .contenedor__botones {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    position: relative;
+    z-index: 1; }
 
-.busquedas {
+/* ------------------------------------- */
+/* ESTILOS HEADER */
+.busqueda {
   width: 90%;
   margin: 0 auto;
   margin-top: 30px; }
 
+/* ------------------------------------- */
+/* ESTILOS HEADER */
 .sugerencia {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 64px; }
 
+/* ------------------------------------- */
+/* ESTILOS HEADER */
 .tendencia {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 64px; }
+
+/* ------------------------------------- */
