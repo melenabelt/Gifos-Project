@@ -1,8 +1,10 @@
 html {
-  font-size: 1rem; }
+  font-size: 1rem;
+}
 
 body {
-  background-color: #fff4fd; }
+  background-color: #fff4fd;
+}
 
 .header__contador p {
   color: #ffffff;
@@ -14,10 +16,12 @@ body {
           box-shadow: 0 1px 0 0 #110038;
   font-family: "Chakra Petch", sans-serif;
   font-weight: 400;
-  margin-top: 0; }
+  margin-top: 0;
+}
 
 .header__logo a:last-child {
-  margin-left: 14px; }
+  margin-left: 14px;
+}
 
 .titulo {
   background-image: -webkit-gradient(linear, right top, left top, from(#f7c9f3), to(#4180f6));
@@ -29,12 +33,14 @@ body {
   padding: 5px;
   -webkit-box-shadow: inset -2px 0 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff;
           box-shadow: inset -2px 0 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff;
-  margin: 0; }
+  margin: 0;
+}
 
 .contendor__instrucciones .subTitulo {
   margin-top: 0;
   font-weight: 600;
-  font-size: 1rem; }
+  font-size: 1rem;
+}
 
 .contendor__instrucciones p, .contendor__instrucciones ol {
   font-family: "Chakra Petch", sans-serif;
@@ -42,31 +48,38 @@ body {
   font-size: 0.875rem;
   color: #110038;
   letter-spacing: 0;
-  line-height: 20px; }
+  line-height: 20px;
+}
 
 .contendor__instrucciones span {
   font-weight: 600;
   font-style: oblique;
   letter-spacing: 0;
-  line-height: 20px; }
+  line-height: 20px;
+}
 
 .contendor__instrucciones ol {
   margin: 0;
   padding-left: 0;
-  line-height: 30px; }
+  line-height: 30px;
+}
 
 .contendor__instrucciones li {
   margin: 0;
   padding: 0;
-  list-style: none; }
-  .contendor__instrucciones li .item {
-    font-weight: 600;
-    letter-spacing: 0;
-    font-style: normal;
-    margin-right: 3px; }
+  list-style: none;
+}
+
+.contendor__instrucciones li .item {
+  font-weight: 600;
+  letter-spacing: 0;
+  font-style: normal;
+  margin-right: 3px;
+}
 
 .contendor__instrucciones p:last-child {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+}
 
 .contenedor__boton-1 {
   background: #fff4fd;
@@ -78,7 +91,8 @@ body {
   padding: 9px 39.5px;
   margin-top: 0;
   margin-bottom: 36px;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 .contenedor__boton-2 {
   background: #f7c9f3;
@@ -90,7 +104,8 @@ body {
   margin-right: 2.25rem;
   margin-top: 0;
   margin-bottom: 36px;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 .mis--gifs h3 {
   background: #fffafe;
@@ -100,15 +115,18 @@ body {
   font-family: "Chakra Petch", sans-serif;
   font-weight: 400;
   padding: 7px;
-  font-size: 0.875rem; }
+  font-size: 0.875rem;
+}
 
 .nivel-2 {
-  width: 598px;
-  position: relative; }
+  width: 632px;
+  position: relative;
+}
 
 .nivel-1 {
-  width: 290px;
-  position: relative; }
+  width: 300px;
+  position: relative;
+}
 
 .header__logo {
   margin-left: 60px;
@@ -118,7 +136,8 @@ body {
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+}
 
 .crear-gifs__contenedor {
   display: -webkit-box;
@@ -128,14 +147,16 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0 25px 0 36px;
-  margin-top: 30px; }
+  margin-top: 30px;
+}
 
 .contendor__instrucciones {
   font-family: "Chakra Petch", sans-serif;
   width: 32.375em;
   margin-top: 0;
   margin-left: 1rem;
-  margin-right: 5.813rem; }
+  margin-right: 5.813rem;
+}
 
 .contenedor__boton {
   display: -webkit-box;
@@ -145,31 +166,36 @@ body {
       -ms-flex-pack: end;
           justify-content: flex-end;
   font-family: "Chakra Petch", sans-serif;
-  margin-top: 28px; }
+  margin-top: 28px;
+}
 
 .mis--gifs__contenedor {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (290px)[4];
-      grid-template-columns: repeat(4, 290px);
+  -ms-grid-columns: (300px)[4];
+      grid-template-columns: repeat(4, 300px);
   grid-gap: 16px 16px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+}
 
 .gif__contenedor--1 {
   -ms-grid-column-span: 1;
-      grid-column-end: span 1; }
+      grid-column-end: span 1;
+}
 
 .gif__contenedor--2 {
   -ms-grid-column-span: 2;
-      grid-column-end: span 2; }
+      grid-column-end: span 2;
+}
 
 .tendencia__gif__container {
-  display: inline-block; }
+  display: inline-block;
+}
 
 .crear-gifs {
   width: -webkit-fit-content;
@@ -180,10 +206,12 @@ body {
           box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 5.313rem; }
+  margin-top: 5.313rem;
+}
 
 .mis--gifs {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 9.563rem; }
+  margin-top: 9.563rem;
+}
