@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../../../styles/normalize.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chakra+Petch:300,300i,400,400i,500,500i,600,600i,700,700i&amp;display=swap">
     <link rel="stylesheet" href="../../../styles/mis-gifos.css">
+    <link id="temas2" rel="stylesheet" href="../../../styles/mis-gifos_normal.css">
   </head>
   <body>
     <header class="header">
@@ -34,6 +35,31 @@
         <p class="contenedor__boton-1" id="contenedor__boton-1">Cancelar</p>
         <p class="contenedor__boton-2" id="contenedor__boton-2">Comenzar</p>
       </div>
+    </section>
+    <section class="mostrar_camara" id="mostrar_camara">
+      <div class="mostrar_camara_titulo" id="mostrar_camara_titulo">
+        <p class="camara_titulo" id="camara_titulo">Un Chequeo Antes de Empezar</p><img src="../../assets/close.svg">
+      </div>
+      <div class="mostrar_camara_grabar" id="mostrar_camara_grabar">
+        <video id="grabar_camara"></video><img id="reproducir_gif">
+      </div>
+      <div class="contenedor_capturar" id="contenedor_capturar">
+        <div class="mostrar_camara_icono" id="mostrar_camara_icono"></div>
+        <p class="mostrar_camara_capturar" id="mostrar_camara_capturar"></p>
+      </div>
+      <div class="contenedor_capturar_listo" id="contenedor_capturar_listo">
+        <div class="mostrar_camara_icono_listo" id="mostrar_camara_icono_listo"></div>
+        <p class="mostrar_camara_capturar_listo" id="mostrar_camara_capturar_listo">Listo</p>
+      </div>
+      <div class="contenedor_finalizar_botones" id="contenedor_finalizar_botones">
+        <div class="contenedor_reproducir_gif" id="contenedor_reproducir_gif"><img src="../../assets/forward.svg" alt="Reproducción de gif" id="reproducir_gif_img"></div>
+        <div class="contenedor_repetir_enviar">
+          <p class="contenedor_finalizar_repetir" id="contenedor_finalizar_repetir">Repetir Captura</p>
+          <p class="contenedor_finalizar_subir" id="contenedor_finalizar_subir">Subir Guifo</p>
+        </div>
+      </div>
+      <p class="mostrar_camara_reloj" id="mostrar_camara_reloj">00:00:03:06</p>
+      <div class="mostrar_camara_grabando" id="mostrar_camara_grabando"></div>
     </section>
     <section class="mis--gifs">
       <h3>Mis guifos</h3>
@@ -92,5 +118,7 @@
     </section>
     <script src="../../util/index.js"></script>
     <script src="../../util/home.js"></script>
+    <script src="../..//util/mis_guifos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/RecordRTC/5.5.8/RecordRTC.js"></script>
   </body>
 </html>

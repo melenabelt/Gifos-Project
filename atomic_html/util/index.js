@@ -11,6 +11,14 @@ let buscar = document.getElementById('buscar');
 let mostrarRosa = document.getElementById('busqueda__principal--rosa');
 let busquedaInput = document.getElementById('busqueda__principal--input');
 let lupa = document.getElementById('lupa');
+let temas = document.getElementById('temas');
+let temas2 = document.getElementById('temas2');
+console.log('Temas 2: ', temas2);
+
+let opciones_temas = document.getElementsByClassName('opcionesTemas')
+console.log('Opciones Temas: ', opciones_temas);
+
+
 
 // MENU DESPLEGABLE PARA LOS TEMAS
 
@@ -82,4 +90,20 @@ let hiddenSubmit = submit.addEventListener('click', () => {
   busquedaInput.classList.add('busqueda__principal--active--input')
 })
 
+/////////////////////////////
+opciones_temas[1].addEventListener('click', () => {
+  let temas_cambio_1 = temas.href.replace('normal', 'oscuro')
+  /*   let temas2_cambio_1 = temas2.href.replace('normal', 'oscuro') */
+  temas.href = temas_cambio_1
+  /*   temas2.href = temas2_cambio_1 */
+  console.log('URL Temas: ', temas.href);
+})
+
+opciones_temas[0].addEventListener('click', () => {
+  let temas_cambio_2 = temas.href.replace('oscuro', 'normal')
+  /*   let temas2_cambio_2 = temas2.href.replace('oscuro', 'normal') */
+  temas.href = temas_cambio_2
+  /*   temas2.href = temas2_cambio_2 */
+  console.log('URL Temas: ', temas.href);
+})
 
