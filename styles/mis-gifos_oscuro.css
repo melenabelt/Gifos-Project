@@ -1,0 +1,27 @@
+body {
+  background-color: #110038; }
+
+.header__contador p {
+  background-image: -webkit-gradient(linear, right top, left top, from(#ee3efe), to(#2e32fb));
+  background-image: linear-gradient(to left, #ee3efe 0%, #2e32fb 100%); }
+
+.titulo {
+  background-image: -webkit-gradient(linear, right top, left top, from(#ee3efe), to(#2e32fb));
+  background-image: linear-gradient(to left, #ee3efe 0%, #2e32fb 100%);
+  -webkit-box-shadow: inset -1px -1px 0 0 #a72cb3, inset 1px 1px 0 0 #ffffff;
+          box-shadow: inset -1px -1px 0 0 #a72cb3, inset 1px 1px 0 0 #ffffff; }
+
+.contenedor__boton-2 {
+  background: #ee3efe;
+  -webkit-box-shadow: inset -1px -1px 0 0 #a72cb3, inset 1px 1px 0 0 #ffffff;
+          box-shadow: inset -1px -1px 0 0 #a72cb3, inset 1px 1px 0 0 #ffffff; }
+
+.mis--gifs h3 {
+  background: #fffafe;
+  border: 1px solid #2e32fb;
+  -webkit-box-shadow: inset -2px -2px 0 0 #e6dce4, inset 2px 2px 0 0 #110038;
+          box-shadow: inset -2px -2px 0 0 #e6dce4, inset 2px 2px 0 0 #110038;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  padding: 7px;
+  font-size: 0.875rem; }

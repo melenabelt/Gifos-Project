@@ -288,7 +288,167 @@ ul {
   height: 300px; }
 
 /* ------------------------------------- */
-/* @import "./sass/components/atomos-normales"; */
+/* ----------- ESTILOS PARA ÁTOMOS NORMALES -----------  */
+/* ESTILOS GLOBALES */
+body {
+  background-color: #fff4fd; }
+
+/* ESTILOS HEADER */
+.header__contador p {
+  background-image: -webkit-gradient(linear, right top, left top, from(#f7c9f3), to(#4180f6));
+  background-image: linear-gradient(to left, #f7c9f3, #4180f6); }
+
+.crear {
+  background: #f7c9f3;
+  color: #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+          box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff; }
+
+.crear:hover {
+  background: #e6bbe2; }
+
+.contenedor__nav__temas p {
+  background: #f7c9f3;
+  color: #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+          box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff; }
+
+.contenedor__nav__temas img {
+  background: #f7c9f3;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+          box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff; }
+
+.contenedor__nav__temas p:hover {
+  background: #e6bbe2; }
+
+.contenedor__nav__temas img:hover {
+  background: #e6bbe2; }
+
+ul {
+  background: #e6e6e6;
+  -webkit-box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff;
+          box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff; }
+
+.contenedor__nav li {
+  background: #f0f0f0; }
+
+.contenedor__nav li:hover {
+  background: #fff4fd;
+  border: 1px solid #cca6c9; }
+
+.mis-guifos {
+  color: #110038; }
+
+.mis-guifos:hover {
+  border-color: #110038; }
+
+.mis-guifos:active {
+  color: #110038; }
+
+/* ------------------------------------- */
+/* ESTILOS SECCIÓN BUSQUEDA */
+.busqueda__titulo {
+  background-image: -webkit-gradient(linear, right top, left top, from(#f7c9f3), to(#4180f6));
+  background-image: linear-gradient(to left, #f7c9f3, #4180f6);
+  -webkit-box-shadow: inset -2px 0 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff;
+          box-shadow: inset -2px 0 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff; }
+
+.busqueda__principal input {
+  background: #e6e6e6;
+  color: #b4b4b4; }
+
+/* CLASE QUE SE AGREGA DESDE JS PARA EL ESTADO INPUT DEL BOTON */
+.busqueda__principal .busqueda__principal--rosa {
+  background: #f7c9f3;
+  color: #110038; }
+
+.busqueda__principal .lupa {
+  background-image: url("../atomic_html/assets/lupa_inactive.svg"); }
+
+/* CLASE QUE SE AGREGA DESDE JS PARA EL ESTADO INPUT DEL BOTON */
+.lupa--input {
+  background-image: url("../atomic_html/assets/lupa.svg"); }
+
+.opciones {
+  background: #f0f0f0; }
+
+/* CLASE QUE SE AGREGA DESDE JS PARA EL ESTADO HOVER DE LAS OPCIONES */
+.opciones--hover {
+  background: #dbdbdb; }
+
+.mostarOpcionesBlock p {
+  background: #4180f6;
+  border: 1px solid #4c2f99;
+  -webkit-box-shadow: inset -2px -2px 0 0 #284f99, inset 2px 2px 0 0 #ffffff;
+          box-shadow: inset -2px -2px 0 0 #284f99, inset 2px 2px 0 0 #ffffff;
+  color: #ffffff; }
+
+/* ------------------------------------- */
+/* ESTILOS SECCIÓN SUGERENCIAS */
+.sugerencia h3 {
+  background: #fffafe;
+  border: 1px solid #e6bbe2;
+  -webkit-box-shadow: inset -2px -2px 0 0 #e6dce4, inset 2px 2px 0 0 #80687d;
+          box-shadow: inset -2px -2px 0 0 #e6dce4, inset 2px 2px 0 0 #80687d;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  padding: 7px;
+  font-size: 0.875rem; }
+
+.sugerencia__gif--titulo {
+  background-image: -webkit-gradient(linear, right top, left top, from(#f7c9f3), to(#4180f6));
+  background-image: linear-gradient(to left, #f7c9f3, #4180f6); }
+
+.sugerencia__gifs__container {
+  background: #e6e6e6;
+  -webkit-box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff;
+          box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff; }
+  .sugerencia__gifs__container a {
+    background: #4180f6;
+    border: 1px solid #4c2f99;
+    -webkit-box-shadow: inset -2px -2px 0 0 #284f99, inset 1px 1px 0 0 #ffffff;
+            box-shadow: inset -2px -2px 0 0 #284f99, inset 1px 1px 0 0 #ffffff;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 18px;
+    padding: 8px 10px;
+    text-decoration: none;
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    width: 90px;
+    height: 34px; }
+  .sugerencia__gifs__container a:hover {
+    background-color: #3a72db; }
+
+/* ------------------------------------- */
+/* ESTILOS SECCIÓN TENDENCIAS */
+.tendencia h3 {
+  background: #fffafe;
+  border: 1px solid #e6bbe2;
+  -webkit-box-shadow: inset -2px -2px 0 0 #e6dce4, inset 2px 2px 0 0 #80687d;
+          box-shadow: inset -2px -2px 0 0 #e6dce4, inset 2px 2px 0 0 #80687d;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  padding: 7px;
+  font-size: 0.875rem; }
+
+.tendencias__gifs__contenedor:hover p {
+  background-image: -webkit-gradient(linear, right top, left top, from(#f7c9f3), to(#4180f6));
+  background-image: linear-gradient(to left, #f7c9f3, #4180f6);
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #ffffff;
+  letter-spacing: 0;
+  width: 100%;
+  margin: 0; }
+
+/* ------------------------------------- */
+/* @import "./sass/components/atomos-oscuros"; */
 /* -----------  ESTILOS PARA MOLECULAS COMUNES -----------  */
 /* ESTILOS HEADER */
 .contenedor__nav__temas {
@@ -439,9 +599,43 @@ ul {
   padding: 4px 4px 0px 4px; }
 
 /* ------------------------------------- */
-/* @import "./sass/components/moleculas-normales"; */
-/* @import "./sass/components/atomos";
-@import "./sass/components/moleculas"; */
+/* -----------  ESTILOS PARA MOLECULAS NORMALES -----------  */
+/* ESTILOS SECCIÓN BUSQUEDA */
+.busqueda__contenedor {
+  background: #e6e6e6;
+  -webkit-box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 0 0 #ffffff;
+          box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 0 0 #ffffff; }
+
+.busqueda__principal--borde {
+  -webkit-box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+          box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff; }
+
+.busqueda__principal--rosa {
+  background: #f7c9f3;
+  color: #110038; }
+
+.busqueda__principal--rosa--active {
+  background: #e6bbe2;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+          box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff; }
+
+.busqueda__principal--active--input {
+  background: #e6bbe2; }
+
+.busqueda__opciones {
+  background-color: #e6e6e6;
+  -webkit-box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff;
+          box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff; }
+
+/* ------------------------------------- */
+/* ESTILOS SECCIÓN TENDENCIAS*/
+.tendencia__gif__container:hover {
+  background: #e6e6e6;
+  -webkit-box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff;
+          box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff; }
+
+/* ------------------------------------- */
+/* @import "./sass/components/moleculas-oscuras"; */
 /* -----------  ESTILOS PARA ORGANISMOS -----------  */
 /* ESTILOS HEADER */
 .header__contenedor {

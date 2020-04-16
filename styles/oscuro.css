@@ -1,0 +1,199 @@
+@charset "UTF-8";
+/* ----------- ESTILOS PARA ÁTOMOS OSCUROS -----------  */
+/* ESTILOS GLOBALES */
+body {
+  background-color: #110038; }
+
+/* ESTILOS HEADER */
+.header__contador p {
+  background-image: -webkit-gradient(linear, right top, left top, from(#ee3efe), to(#2e32fb));
+  background-image: linear-gradient(to left, #ee3efe 0%, #2e32fb 100%); }
+
+.crear {
+  background: #ee3efe;
+  color: #ffffff;
+  -webkit-box-shadow: inset -1px -1px 0 0 #a72cb3, inset 1px 1px 0 0 #ffffff;
+          box-shadow: inset -1px -1px 0 0 #a72cb3, inset 1px 1px 0 0 #ffffff; }
+
+.crear:hover {
+  background: #ce36db; }
+
+.contenedor__nav__temas p {
+  background: #ee3efe;
+  color: #ffffff;
+  -webkit-box-shadow: inset -1px -1px 0 0 #a72cb3, inset 1px 1px 0 0 #ffffff;
+          box-shadow: inset -1px -1px 0 0 #a72cb3, inset 1px 1px 0 0 #ffffff; }
+
+.contenedor__nav__temas img {
+  fill: #ffffff;
+  background: #ee3efe;
+  -webkit-box-shadow: inset -1px -1px 0 0 #a72cb3, inset 1px 1px 0 0 #ffffff;
+          box-shadow: inset -1px -1px 0 0 #a72cb3, inset 1px 1px 0 0 #ffffff; }
+
+.contenedor__nav__temas p:hover {
+  background: #ce36db; }
+
+.contenedor__nav__temas img:hover {
+  background: #ce36db; }
+
+ul {
+  background: #b4b4b4;
+  -webkit-box-shadow: inset -2px -2px 0 0 #8f8f8f, inset 2px 2px 0 0 #ffffff;
+          box-shadow: inset -2px -2px 0 0 #8f8f8f, inset 2px 2px 0 0 #ffffff; }
+
+.contenedor__nav li {
+  background: #cccccc; }
+
+.contenedor__nav li:hover {
+  background: #2e32fb;
+  color: #ffffff;
+  border: 1px solid rgba(51, 53, 143, 0.2); }
+
+.mis-guifos {
+  color: #ffffff; }
+
+.mis-guifos:hover {
+  border-color: #ffffff; }
+
+.mis-guifos:active {
+  color: #ffffff; }
+
+/* ------------------------------------- */
+/* ESTILOS SECCIÓN BUSQUEDA */
+.busqueda__titulo {
+  background-image: -webkit-gradient(linear, right top, left top, from(#ee3efe), to(#2e32fb));
+  background-image: linear-gradient(to left, #ee3efe 0%, #2e32fb 100%);
+  -webkit-box-shadow: inset -2px 0 0 0 #8f8f8f, inset 2px 2px 0 0 #ffffff;
+          box-shadow: inset -2px 0 0 0 #8f8f8f, inset 2px 2px 0 0 #ffffff; }
+
+.busqueda__principal input {
+  background: #b4b4b4;
+  color: #8f8f8f; }
+
+/* CLASE QUE SE AGREGA DESDE JS PARA EL ESTADO INPUT DEL BOTON */
+.busqueda__principal .busqueda__principal--rosa {
+  background: #ee3efe;
+  color: #ffffff; }
+
+.busqueda__principal .lupa {
+  background-image: url("../atomic_html/assets/lupa.svg");
+  opacity: 20%; }
+
+.lupa--input {
+  background-image: url("../atomic_html/assets/lupa_light.svg"); }
+
+.opciones {
+  background: #cccccc; }
+
+.opciones--hover {
+  background: #cccccc; }
+
+.mostarOpcionesBlock p {
+  background: #4180f6;
+  border: 1px solid #4c2f99;
+  -webkit-box-shadow: inset -2px -2px 0 0 #284f99, inset 2px 2px 0 0 #ffffff;
+          box-shadow: inset -2px -2px 0 0 #284f99, inset 2px 2px 0 0 #ffffff;
+  color: #ffffff; }
+
+/* ------------------------------------- */
+/* ESTILOS SECCIÓN SUGERENCIAS */
+.sugerencia h3 {
+  background: #fffafe;
+  border: 1px solid #2e32fb;
+  -webkit-box-shadow: inset -2px -2px 0 0 #e6dce4, inset 2px 2px 0 0 #110038;
+          box-shadow: inset -2px -2px 0 0 #e6dce4, inset 2px 2px 0 0 #110038;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  padding: 7px;
+  font-size: 0.875rem; }
+
+.sugerencia__gif--titulo {
+  background-image: -webkit-gradient(linear, right top, left top, from(#ee3efe), to(#2e32fb));
+  background-image: linear-gradient(to left, #ee3efe 0%, #2e32fb 100%); }
+
+.sugerencia__gifs__container {
+  background: #b4b4b4;
+  -webkit-box-shadow: inset -2px -2px 0 0 #5c5c5c, inset 2px 2px 0 0 #ffffff;
+          box-shadow: inset -2px -2px 0 0 #5c5c5c, inset 2px 2px 0 0 #ffffff; }
+  .sugerencia__gifs__container a {
+    background: #2e32fb;
+    border: 1px solid #4c2f99;
+    -webkit-box-shadow: inset -2px -2px 0 0 #2124b3, inset 2px 2px 0 0 #ffffff;
+            box-shadow: inset -2px -2px 0 0 #2124b3, inset 2px 2px 0 0 #ffffff;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 18px;
+    padding: 8px 10px;
+    text-decoration: none;
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    width: 90px;
+    height: 34px; }
+  .sugerencia__gifs__container a:hover {
+    background-color: #2629cc; }
+
+/* ------------------------------------- */
+/* ESTILOS SECCIÓN TENDENCIAS */
+.tendencia h3 {
+  background: #fffafe;
+  border: 1px solid #2e32fb;
+  -webkit-box-shadow: inset -2px -2px 0 0 #e6dce4, inset 2px 2px 0 0 #110038;
+          box-shadow: inset -2px -2px 0 0 #e6dce4, inset 2px 2px 0 0 #110038;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  padding: 7px;
+  font-size: 0.875rem; }
+
+.tendencias__gifs__contenedor:hover p {
+  background-image: -webkit-gradient(linear, right top, left top, from(#ee3efe), to(#2e32fb));
+  background-image: linear-gradient(to left, #ee3efe 0%, #2e32fb 100%);
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #ffffff;
+  letter-spacing: 0;
+  width: 100%;
+  margin: 0; }
+
+/* ------------------------------------- */
+/* -----------  ESTILOS PARA MOLECULAS OSCURAS -----------  */
+/* ESTILOS SECCIÓN BUSQUEDA */
+.busqueda__contenedor {
+  background: #b4b4b4;
+  -webkit-box-shadow: inset -2px -2px 0 0 #8f8f8f, inset 2px 0 0 #ffffff;
+          box-shadow: inset -2px -2px 0 0 #8f8f8f, inset 2px 0 0 #ffffff; }
+
+.busqueda__principal--borde {
+  -webkit-box-shadow: inset -1px -1px 0 0 #a72cb3, inset 1px 1px 0 0 #ffffff;
+          box-shadow: inset -1px -1px 0 0 #a72cb3, inset 1px 1px 0 0 #ffffff; }
+
+.busqueda__principal--rosa {
+  background: #ee3efe;
+  color: #ffffff; }
+
+.busqueda__principal--rosa--active {
+  background: #ce36db;
+  -webkit-box-shadow: inset -1px -1px 0 0 #a72cb3, inset 1px 1px 0 0 #ffffff;
+          box-shadow: inset -1px -1px 0 0 #a72cb3, inset 1px 1px 0 0 #ffffff; }
+
+.busqueda__principal--active--input {
+  background: #ce36db;
+  color: #ffffff; }
+
+.busqueda__opciones {
+  background-color: #cccccc;
+  -webkit-box-shadow: inset -2px -2px 0 0 #8f8f8f, inset 2px 2px 0 0 #ffffff;
+          box-shadow: inset -2px -2px 0 0 #8f8f8f, inset 2px 2px 0 0 #ffffff; }
+
+/* ------------------------------------- */
+/* ESTILOS SECCIÓN TENDENCIAS*/
+.tendencia__gif__container:hover {
+  background: #b4b4b4;
+  -webkit-box-shadow: inset -2px -2px 0 0 #5c5c5c, inset 2px 2px 0 0 #ffffff;
+          box-shadow: inset -2px -2px 0 0 #5c5c5c, inset 2px 2px 0 0 #ffffff; }
+
+/* ------------------------------------- */
