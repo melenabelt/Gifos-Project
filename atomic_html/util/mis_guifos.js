@@ -118,13 +118,16 @@ function crear_gifs() {
             contenedor_cancelar.style.display = ""
             finalizar_botones.style.display = 'none'
             reproducir_gif.style.display = 'none'
-            let contador = 0
-            setInterval(() => {
-              subir_barra_cuadro[contador].classList.add(
-                "subir_barra_cuadro--color"
-              );
-              contador += 1;
-            }, 500);
+            let contador_1 = 0
+            let pintar_barra_1;
+            pintar_barra_1 = setInterval(() => {
+              subir_barra_cuadro[contador_1].classList.add("subir_barra_cuadro--color")
+              contador_1 += 1
+              contador_1 == 10
+                ? clearInterval(pintar_barra_1)
+                : console.log("Pintando 1");
+            }, 100);
+
 
             let inst = new giphy();
             let key = "YgKAQyftfAQrFSeqJEBOIt9v7ImEN5D0";
@@ -135,11 +138,22 @@ function crear_gifs() {
                     .then(response => response.json())
                     .then(resData => {
                       localStorage.setItem(`GIF ${resData.data.id}`, JSON.stringify(resData))
+                      let contador_2 = 10
+                      let pintar_barra_2;
+                      pintar_barra_2 = setInterval(() => {
+                        subir_barra_cuadro[contador_2].classList.add("subir_barra_cuadro--color")
+                        contador_2 += 1
+                        if (contador_2 == 23){
+                          clearInterval(pintar_barra_2)
+                          alert("Tu gif se terminó de subir")
+                        } else {
+                          console.log('Pintando 2');
+                        }
+                      }, 200);
+
                       mostrar_mis_gif_creados()
-                      if(contador == 23) {
-                        console.log('Llegaste al final')
-                      }
                     })
+                    
                 return traer_gif
               });
           })
