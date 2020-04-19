@@ -280,8 +280,8 @@ html {
   text-align: center;
   background: #f7c9f3;
   border: 1px solid #110038;
-  -webkit-box-shadow: inset -1px -1px 0 0 #rosaOscuro, inset 1px 1px 0 0 #ffffff;
-          box-shadow: inset -1px -1px 0 0 #rosaOscuro, inset 1px 1px 0 0 #ffffff;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+          box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
   cursor: pointer; }
 
 .finalizar_titulo img {
@@ -494,7 +494,6 @@ html {
   display: inline-block; }
 
 .crear-gifs {
-  display: none;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
