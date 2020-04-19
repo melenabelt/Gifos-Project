@@ -28,7 +28,7 @@ function cargaDelBody() { // Función para detectar la carga del body y llamar a
 // ENDPOINT SUGERENCIAS
 function getSugerencias() {
   const Sugerencias =
-    fetch('http://api.giphy.com/v1/gifs/trending' + '?api_key=' + 'YgKAQyftfAQrFSeqJEBOIt9v7ImEN5D0' + '&limit=10')
+    fetch('https://api.giphy.com/v1/gifs/trending' + '?api_key=' + 'YgKAQyftfAQrFSeqJEBOIt9v7ImEN5D0' + '&limit=10')
       .then(response => response.json())
       .then(resData => {
         for (let i = 0; i < resData.data.length; i++) {
@@ -149,7 +149,7 @@ let search = () => {
 
 //ENDPOINT TENDENCIAS
 function getTendencias(search) {
-  const URL_TENDENCIA = 'http://api.giphy.com/v1/gifs/search?q=' + search + '&api_key=' + 'YgKAQyftfAQrFSeqJEBOIt9v7ImEN5D0' + '&limit=10'
+  const URL_TENDENCIA = 'https://api.giphy.com/v1/gifs/search?q=' + search + '&api_key=' + 'YgKAQyftfAQrFSeqJEBOIt9v7ImEN5D0' + '&limit=10'
 
   const Tendencias =
     fetch(URL_TENDENCIA)
@@ -198,7 +198,7 @@ function autocompletarBusqueda() {
   autocompletar(buscar_sugerencias)
 
   function autocompletar(search) {
-    const URL_SUGERENCIAS = 'http://api.giphy.com/v1/gifs/search/tags?q=' + search + '&api_key=' + 'YgKAQyftfAQrFSeqJEBOIt9v7ImEN5D0' + '&limit=3'
+    const URL_SUGERENCIAS = 'https://api.giphy.com/v1/gifs/search/tags?q=' + search + '&api_key=' + 'YgKAQyftfAQrFSeqJEBOIt9v7ImEN5D0' + '&limit=3'
     const Sugerencias =
       fetch(URL_SUGERENCIAS)
         .then(response => response.json())
