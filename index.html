@@ -1,61 +1,48 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/normalize.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Chakra+Petch:300,300i,400,400i,500,500i,600,600i,700,700i&amp;display=swap"
-    />
-    <link rel="stylesheet" href="./styles/styles.css" />
-    <link id="temas" rel="stylesheet" href="./styles/normal.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chakra+Petch:300,300i,400,400i,500,500i,600,600i,700,700i&amp;display=swap">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link id="temas" rel="stylesheet" href="./styles/normal.css">
+    <title>Guifos</title>
   </head>
   <body id="body" onload="cargaDelBody()">
     <header class="header">
       <div class="header__contador">
         <p>¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están./////// Número de visitas: <span id="visitas">12.765.803</span></p>
       </div>
-      <div class="header__contenedor">
-        <img src="./atomic_html/assets/gifOF_logo.png" alt="Logo" />
-        <div class="contenedor__botones">
-          <a class="crear" href="./atomic_html/components/pages/mis_gifs.html">Crear Guifos</a>
+      <div class="header__contenedor"><img src="./atomic_html/assets/gifOF_logo.png" alt="Logo" id="logo">
+        <div class="contenedor__botones"><a class="crear" href="./atomic_html/components/pages/mis_gifs.html">Crear Guifos</a>
           <nav class="contenedor__nav" id="desplegar">
             <div class="contenedor__nav__temas">
-              <p id="desplegarMenu">Elegir Tema</p>
-              <img id="desplegar2" src="./atomic_html/assets/dropdown.svg" alt="flecha hacia abajo" />
+              <p id="desplegarMenu">Elegir Tema</p><img id="desplegar2" src="./atomic_html/assets/dropdown.svg" alt="flecha hacia abajo"/>
             </div>
             <ul>
               <li class="opcionesTemas" onclick="ocultar()">Sailor Day</li>
               <li class="opcionesTemas" onclick="ocultar()">Sailor Night</li>
             </ul>
-          </nav>
-          <a class="mis-guifos" href="./atomic_html/components/pages/mis_gifs.html">Mis Guifos</a>
+          </nav><a class="mis-guifos" href="./atomic_html/components/pages/mis_gifs.html">Mis Guifos</a>
         </div>
       </div>
     </header>
     <section class="busqueda">
-      <p class="busqueda__titulo">Buscar</p>
+      <h2 class="busqueda__titulo">Buscar</h2>
       <form class="busqueda__form">
         <div class="busqueda__contenedor">
-          <input
-            class="texto__busqueda"
-            id="buscar"
-            type="search"
-            placeholder="Busca gifs, hashtags, temas, busca lo que quieras…"
-            onkeyup="autocompletarBusqueda()"
-            autocomplete="off"
-          />
-          <label class="busqueda__principal" id="busqueda__principal--rosa">
+          <input class="texto__busqueda" id="buscar" type="search" placeholder="Busca gifs, hashtags, temas, busca lo que quieras…" onkeyup="autocompletarBusqueda()" autocomplete="off">
+          <div class="busqueda__principal" id="busqueda__principal--rosa">
             <div class="lupa" id="lupa"></div>
-            <input class="busquedad--boton" id="busqueda__principal--input" type="submit" value="Buscar" onclick="search()" />
-          </label>
+            <input class="busquedad--boton" id="busqueda__principal--input" type="submit" value="Buscar" onclick="search()">
+          </div>
         </div>
-        <label class="busqueda__opciones" id="opciones">
-          <input class="opciones" type="button" onclick="enviarOpcionesBusqueda(0)" />
-          <input class="opciones" type="button" onclick="enviarOpcionesBusqueda(1)" />
-          <input class="opciones" type="button" onclick="enviarOpcionesBusqueda(2)" />
-        </label>
+        <div class="busqueda__opciones" id="opciones">
+          <input class="opciones" type="button" onclick="enviarOpcionesBusqueda(0)" value="opción">
+          <input class="opciones" type="button" onclick="enviarOpcionesBusqueda(1)" value="opción">
+          <input class="opciones" type="button" onclick="enviarOpcionesBusqueda(2)" value="opción">
+        </div>
       </form>
       <div class="mostarOpciones" id="mostarOpciones">
         <p class="mostarOpcionesTexto"></p>
@@ -66,96 +53,78 @@
     <section class="sugerencia">
       <h3>Hoy te sugerimos:</h3>
       <div class="sugerencia__gifs">
-        <div class="sugerencia__gifs__container" id="img-gif-prueba">
+        <div class="sugerencia__gifs__container">
           <div class="sugerencia__gif--titulo">
-            <p class="gif--titulo--sugerencia gif--titulo--sugerencia--buscar"></p>
-            <img src="./atomic_html/assets/button_close.svg" alt="boton con una x para cerrar" />
-          </div>
-          <img class="img--gif--sugerencia" alt="gif1" /><a class="verMas1" href="#" onclick="verMasBuscar1()">Ver más...</a>
+            <p class="gif--titulo--sugerencia gif--titulo--sugerencia--buscar"></p><img src="./atomic_html/assets/button_close.svg" alt="boton con una x para cerrar"/>
+          </div><img class="img--gif--sugerencia" alt="gif1"/><a class="verMas1" href="#" onclick="verMasBuscar1()">Ver más...</a>
         </div>
-        <div class="sugerencia__gifs__container" id="img-gif-prueba">
+        <div class="sugerencia__gifs__container">
           <div class="sugerencia__gif--titulo">
-            <p class="gif--titulo--sugerencia gif--titulo--sugerencia--buscar"></p>
-            <img src="./atomic_html/assets/button_close.svg" alt="boton con una x para cerrar" />
-          </div>
-          <img class="img--gif--sugerencia" alt="gif2" /><a class="verMas2" href="#" onclick="verMasBuscar2()">Ver más...</a>
+            <p class="gif--titulo--sugerencia gif--titulo--sugerencia--buscar"></p><img src="./atomic_html/assets/button_close.svg" alt="boton con una x para cerrar"/>
+          </div><img class="img--gif--sugerencia" alt="gif2"/><a class="verMas2" href="#" onclick="verMasBuscar2()">Ver más...</a>
         </div>
-        <div class="sugerencia__gifs__container" id="img-gif-prueba">
+        <div class="sugerencia__gifs__container">
           <div class="sugerencia__gif--titulo">
-            <p class="gif--titulo--sugerencia gif--titulo--sugerencia--buscar"></p>
-            <img src="./atomic_html/assets/button_close.svg" alt="boton con una x para cerrar" />
-          </div>
-          <img class="img--gif--sugerencia" alt="gif3" /><a class="verMas3" href="#" onclick="verMasBuscar3()">Ver más...</a>
+            <p class="gif--titulo--sugerencia gif--titulo--sugerencia--buscar"></p><img src="./atomic_html/assets/button_close.svg" alt="boton con una x para cerrar"/>
+          </div><img class="img--gif--sugerencia" alt="gif3"/><a class="verMas3" href="#" onclick="verMasBuscar3()">Ver más...</a>
         </div>
-        <div class="sugerencia__gifs__container" id="img-gif-prueba">
+        <div class="sugerencia__gifs__container">
           <div class="sugerencia__gif--titulo">
-            <p class="gif--titulo--sugerencia gif--titulo--sugerencia--buscar"></p>
-            <img src="./atomic_html/assets/button_close.svg" alt="boton con una x para cerrar" />
-          </div>
-          <img class="img--gif--sugerencia" alt="gif4" /><a class="verMas4" href="#" onclick="verMasBuscar4()">Ver más...</a>
+            <p class="gif--titulo--sugerencia gif--titulo--sugerencia--buscar"></p><img src="./atomic_html/assets/button_close.svg" alt="boton con una x para cerrar"/>
+          </div><img class="img--gif--sugerencia" alt="gif4"/><a class="verMas4" href="#" onclick="verMasBuscar4()">Ver más...</a>
         </div>
       </div>
     </section>
     <section class="tendencia">
       <h3 id="titulo__tendencia">Tendencias:</h3>
       <div class="tendencias__gifs">
-        <div class="tendencias__gifs__contenedor gif__contenedor--auto">
-          <div class="tendencia__gif__container">
-            <img class="img--gif--tendencias" alt="gifs tendencias" />
+        <div class="tendencias__gifs__contenedor gif__contenedor--1">
+          <div class="tendencia__gif__container"><img class="nivel-1 img--gif--tendencias" alt="gifs tendencias"/>
             <p class="gif--titulo--tendencia"></p>
           </div>
         </div>
-        <div class="tendencias__gifs__contenedor gif__contenedor--auto">
-          <div class="tendencia__gif__container">
-            <img class="img--gif--tendencias" alt="gifs tendencias" />
+        <div class="tendencias__gifs__contenedor gif__contenedor--1">
+          <div class="tendencia__gif__container"><img class="nivel-1 img--gif--tendencias" alt="gifs tendencias"/>
             <p class="gif--titulo--tendencia"></p>
           </div>
         </div>
-        <div class="tendencias__gifs__contenedor gif__contenedor--auto">
-          <div class="tendencia__gif__container">
-            <img class="img--gif--tendencias" alt="gifs tendencias" />
+        <div class="tendencias__gifs__contenedor gif__contenedor--1">
+          <div class="tendencia__gif__container"><img class="nivel-1 img--gif--tendencias" alt="gifs tendencias"/>
             <p class="gif--titulo--tendencia"></p>
           </div>
         </div>
-        <div class="tendencias__gifs__contenedor gif__contenedor--auto">
-          <div class="tendencia__gif__container">
-            <img class="img--gif--tendencias" alt="gifs tendencias" />
+        <div class="tendencias__gifs__contenedor gif__contenedor--1">
+          <div class="tendencia__gif__container"><img class="nivel-1 img--gif--tendencias" alt="gifs tendencias"/>
             <p class="gif--titulo--tendencia"></p>
           </div>
         </div>
-        <div class="tendencias__gifs__contenedor gif__contenedor--auto">
-          <div class="tendencia__gif__container">
-            <img class="img--gif--tendencias" alt="gifs tendencias" />
+        <div class="tendencias__gifs__contenedor gif__contenedor--2">
+          <div class="tendencia__gif__container"><img class="nivel-2 img--gif--tendencias" alt="gifs tendencias"/>
             <p class="gif--titulo--tendencia"></p>
           </div>
         </div>
-        <div class="tendencias__gifs__contenedor gif__contenedor--auto">
-          <div class="tendencia__gif__container">
-            <img class="img--gif--tendencias" alt="gifs tendencias" />
+        <div class="tendencias__gifs__contenedor gif__contenedor--1">
+          <div class="tendencia__gif__container"><img class="nivel-1 img--gif--tendencias" alt="gifs tendencias"/>
             <p class="gif--titulo--tendencia"></p>
           </div>
         </div>
-        <div class="tendencias__gifs__contenedor gif__contenedor--auto">
-          <div class="tendencia__gif__container">
-            <img class="img--gif--tendencias" alt="gifs tendencias" />
+        <div class="tendencias__gifs__contenedor gif__contenedor--1">
+          <div class="tendencia__gif__container"><img class="nivel-1 img--gif--tendencias" alt="gifs tendencias"/>
             <p class="gif--titulo--tendencia"></p>
           </div>
         </div>
-        <div class="tendencias__gifs__contenedor gif__contenedor--auto">
-          <div class="tendencia__gif__container">
-            <img class="img--gif--tendencias" alt="gifs tendencias" />
+        <div class="tendencias__gifs__contenedor gif__contenedor--1">
+          <div class="tendencia__gif__container"><img class="nivel-1 img--gif--tendencias" alt="gifs tendencias"/>
             <p class="gif--titulo--tendencia"></p>
           </div>
         </div>
-        <div class="tendencias__gifs__contenedor gif__contenedor--auto">
-          <div class="tendencia__gif__container">
-            <img class="img--gif--tendencias" alt="gifs tendencias" />
+        <div class="tendencias__gifs__contenedor gif__contenedor--1">
+          <div class="tendencia__gif__container"><img class="nivel-1 img--gif--tendencias" alt="gifs tendencias"/>
             <p class="gif--titulo--tendencia"></p>
           </div>
         </div>
-        <div class="tendencias__gifs__contenedor gif__contenedor--auto">
-          <div class="tendencia__gif__container">
-            <img class="img--gif--tendencias" alt="gifs tendencias" />
+        <div class="tendencias__gifs__contenedor gif__contenedor--2">
+          <div class="tendencia__gif__container"><img class="nivel-2 img--gif--tendencias" alt="gifs tendencias"/>
             <p class="gif--titulo--tendencia"></p>
           </div>
         </div>

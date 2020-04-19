@@ -7,18 +7,19 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chakra+Petch:300,300i,400,400i,500,500i,600,600i,700,700i&amp;display=swap">
     <link rel="stylesheet" href="../../../styles/mis-gifos.css">
     <link id="temas2" rel="stylesheet" href="../../../styles/mis-gifos_normal.css">
+    <title>Mis guifos</title>
   </head>
-  <body>
+  <body onload="mostrar_mis_gif_creados()">
     <header class="header">
       <div class="header__contador">
         <p>¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están./////// Número de visitas: 12.765.803</p>
-        <div class="header__logo"><a href="../../../index.html"><img src="../../assets/arrow.svg" alt=""></a><a href="../../../index.html"><img src="../../assets/gifOF_logo.png" alt=""></a></div>
+        <div class="header__logo"><a href="../../../index.html"><img src="../../assets/arrow.svg" alt="flecha"></a><a href="../../../index.html"><img src="../../assets/gifOF_logo.png" alt="logo normal"></a></div>
       </div>
     </header>
     <section class="crear-gifs" id="crear-gifs">
-      <p class="titulo">Crear Gifos</p>
+      <h2 class="titulo">Crear Gifos</h2>
       <div class="crear-gifs__contenedor">
-        <label><img src="../../assets/window-img.png" alt=""></label>
+        <label><img src="../../assets/window-img.png" alt="imagen de ventanita"></label>
         <div class="contendor__instrucciones">
           <p class="subTitulo">Aquí podrás crear tus propios guifos</p>
           <p>Crear tu <span>guifo </span>es muy fácil, graba cualquier imagen con tu cámara y obtén guifos personalizados. Los pasos para crear tu guifo son:</p>
@@ -38,10 +39,39 @@
     </section>
     <section class="mostrar_camara" id="mostrar_camara">
       <div class="mostrar_camara_titulo" id="mostrar_camara_titulo">
-        <p class="camara_titulo" id="camara_titulo">Un Chequeo Antes de Empezar</p><img src="../../assets/close.svg">
+        <h2 class="camara_titulo" id="camara_titulo"></h2><img src="../../assets/close.svg" alt="cerrar" id="cerrar_1">
       </div>
       <div class="mostrar_camara_grabar" id="mostrar_camara_grabar">
-        <video id="grabar_camara"></video><img id="reproducir_gif">
+        <video id="grabar_camara"></video><img class="reproducir_gif" alt="reproducción del gif" id="reproducir_gif">
+        <div class="contenedor_subir_gif" id="contenedor_subir_gif"><img src="../../assets/globe_img.png" alt="globito" id="subir_globo">
+          <p class="subir_texto" id="subir_texto">Estamos subiendo tu guifo…</p>
+          <div class="subir_barra" id="subir_barra">
+            <div class="subir_barra_cuadro"></div>
+            <div class="subir_barra_cuadro"></div>
+            <div class="subir_barra_cuadro"></div>
+            <div class="subir_barra_cuadro"></div>
+            <div class="subir_barra_cuadro"></div>
+            <div class="subir_barra_cuadro"></div>
+            <div class="subir_barra_cuadro"></div>
+            <div class="subir_barra_cuadro"></div>
+            <div class="subir_barra_cuadro"></div>
+            <div class="subir_barra_cuadro"></div>
+            <div class="subir_barra_cuadro"></div>
+            <div class="subir_barra_cuadro"></div>
+            <div class="subir_barra_cuadro"></div>
+            <div class="subir_barra_cuadro"></div>
+            <div class="subir_barra_cuadro"></div>
+            <div class="subir_barra_cuadro"></div>
+            <div class="subir_barra_cuadro"></div>
+            <div class="subir_barra_cuadro"></div>
+            <div class="subir_barra_cuadro"></div>
+            <div class="subir_barra_cuadro"></div>
+            <div class="subir_barra_cuadro"></div>
+            <div class="subir_barra_cuadro"></div>
+            <div class="subir_barra_cuadro"></div>
+          </div>
+          <p class="subir_texto2" id="subir_texto2">Tiempo restante: <span>38 años </span>algunos minutos</p>
+        </div>
       </div>
       <div class="contenedor_capturar" id="contenedor_capturar">
         <div class="mostrar_camara_icono" id="mostrar_camara_icono"></div>
@@ -52,72 +82,36 @@
         <p class="mostrar_camara_capturar_listo" id="mostrar_camara_capturar_listo">Listo</p>
       </div>
       <div class="contenedor_finalizar_botones" id="contenedor_finalizar_botones">
-        <div class="contenedor_reproducir_gif" id="contenedor_reproducir_gif"><img src="../../assets/forward.svg" alt="Reproducción de gif" id="reproducir_gif_img"></div>
+        <div class="contenedor_reproducir_gif" id="contenedor_reproducir_gif"><img src="../../assets/forward.svg" alt="Botón de reproducir" id="reproducir_gif_img"></div>
         <div class="contenedor_repetir_enviar">
-          <p class="contenedor_finalizar_repetir" id="contenedor_finalizar_repetir">Repetir Captura</p>
-          <p class="contenedor_finalizar_subir" id="contenedor_finalizar_subir">Subir Guifo</p>
+          <p class="contenedor_finalizar_repetir" id="contenedor_finalizar_repetir"> Repetir Captura</p>
+          <p class="contenedor_finalizar_subir" id="contenedor_finalizar_subir">Subir guifo</p>
         </div>
+      </div>
+      <div class="contenedor_cancelar" id="contenedor_cancelar">
+        <p class="cancelar_texto" id="cancelar_texto">Cancelar</p>
       </div>
       <p class="mostrar_camara_reloj" id="mostrar_camara_reloj">00:00:03:06</p>
       <div class="mostrar_camara_grabando" id="mostrar_camara_grabando"></div>
     </section>
-    <section class="mis--gifs">
-      <h3>Mis guifos</h3>
-      <div class="mis--gifs__contenedor">
-        <div class="gif__contenedor--1">
-          <div class="tendencia__gif__container"><img class="288X298.jpg img--gif--tendencias" alt="gifs tendencias"/>
-            <p class="gif--titulo--tendencia"></p>
-          </div>
-        </div>
-        <div class="gif__contenedor--1">
-          <div class="tendencia__gif__container"><img class="288X298.jpg img--gif--tendencias" alt="gifs tendencias"/>
-            <p class="gif--titulo--tendencia"></p>
-          </div>
-        </div>
-        <div class="gif__contenedor--1">
-          <div class="tendencia__gif__container"><img class="288X298.jpg img--gif--tendencias" alt="gifs tendencias"/>
-            <p class="gif--titulo--tendencia"></p>
-          </div>
-        </div>
-        <div class="gif__contenedor--1">
-          <div class="tendencia__gif__container"><img class="288X298.jpg img--gif--tendencias" alt="gifs tendencias"/>
-            <p class="gif--titulo--tendencia"></p>
-          </div>
-        </div>
-        <div class="gif__contenedor--2">
-          <div class="tendencia__gif__container"><img class="592X298.jpg img--gif--tendencias" alt="gifs tendencias"/>
-            <p class="gif--titulo--tendencia"></p>
-          </div>
-        </div>
-        <div class="gif__contenedor--1">
-          <div class="tendencia__gif__container"><img class="288X298.jpg img--gif--tendencias" alt="gifs tendencias"/>
-            <p class="gif--titulo--tendencia"></p>
-          </div>
-        </div>
-        <div class="gif__contenedor--1">
-          <div class="tendencia__gif__container"><img class="288X298.jpg img--gif--tendencias" alt="gifs tendencias"/>
-            <p class="gif--titulo--tendencia"></p>
-          </div>
-        </div>
-        <div class="gif__contenedor--1">
-          <div class="tendencia__gif__container"><img class="288X298.jpg img--gif--tendencias" alt="gifs tendencias"/>
-            <p class="gif--titulo--tendencia"></p>
-          </div>
-        </div>
-        <div class="gif__contenedor--1">
-          <div class="tendencia__gif__container"><img class="288X298.jpg img--gif--tendencias" alt="gifs tendencias"/>
-            <p class="gif--titulo--tendencia"></p>
-          </div>
-        </div>
-        <div class="gif__contenedor--2">
-          <div class="tendencia__gif__container"><img class="592X298.jpg img--gif--tendencias" alt="gifs tendencias"/>
-            <p class="gif--titulo--tendencia"></p>
-          </div>
+    <section class="finalizar_gif" id="finalizar_gif">
+      <div class="finalizar_titulo" id="finalizar_titulo">
+        <h2 class="finalizar_exito">Guifo Subido Con Éxito</h2><img src="../../assets/close.svg" alt="cerrar" id="cerrar_2">
+      </div>
+      <div class="contenedor_finalizar">
+        <div class="finalizar_img"><img alt="finalizamos vista" id="img_finalizar"></div>
+        <div class="finalizar_botones">
+          <p class="texto_exito">Guifo creado con éxito</p>
+          <p class="finalizar_boton_copiar" id="finalizar_boton_copiar">Copiar Enlace Guifo</p>
+          <p class="finalizar_boton_descargar" id="finalizar_boton_descargar">Descargar Guifo</p>
         </div>
       </div>
+      <p class="finalizar_listo" id="finalizar_listo">Listo</p>
     </section>
-    <script src="../../util/index.js"></script>
-    <script src="../../util/home.js"></script>
+    <section class="mis--gifs">
+      <h3>Mis guifos</h3>
+      <div class="mis--gifs__contenedor" id="mis--gifs__contenedor"></div>
+    </section>
     <script src="../..//util/mis_guifos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/RecordRTC/5.5.8/RecordRTC.js"></script>
   </body>

@@ -162,6 +162,9 @@ ul {
 /* ------------------------------------- */
 /* -----------  ESTILOS PARA MOLECULAS OSCURAS -----------  */
 /* ESTILOS SECCIÓN BUSQUEDA */
+.busqueda_principal {
+  background: #b4b4b4; }
+
 .busqueda__contenedor {
   background: #b4b4b4;
   -webkit-box-shadow: inset -2px -2px 0 0 #8f8f8f, inset 2px 0 0 #ffffff;

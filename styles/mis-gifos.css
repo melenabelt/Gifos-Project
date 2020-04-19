@@ -87,33 +87,29 @@ html {
   margin-bottom: 36px;
   cursor: pointer; }
 
-.camara_titulo {
+.camara_titulo,
+.finalizar_exito {
   font-size: 0.875rem;
   font-weight: 600;
   color: #ffffff;
   margin: 0;
   padding: 0; }
 
-.mostrar_camara_grabar {
-  width: 832px;
-  height: 434px;
-  margin: 8px 17px 0 11px;
-  padding: 1px;
-  background: #ffffff;
-  border: 1px solid #979797;
-  -webkit-box-shadow: inset -2px -2px 0 0 #e6e6e6, inset 2px 2px 0 0 #000000;
-          box-shadow: inset -2px -2px 0 0 #e6e6e6, inset 2px 2px 0 0 #000000; }
-  .mostrar_camara_grabar video {
-    padding: 1px 0px 1px 1px;
-    width: 827px;
-    height: 431px;
-    -o-object-fit: cover;
-       object-fit: cover; }
-  .mostrar_camara_grabar img {
-    display: none;
-    padding: 1px 0px 1px 1px;
-    width: 827px;
-    height: 431px; }
+.mostrar_camara_titulo img {
+  cursor: pointer; }
+
+.mostrar_camara_grabar video {
+  padding: 1px 0 1px 1px;
+  width: 827px;
+  height: 431px;
+  -o-object-fit: cover;
+     object-fit: cover; }
+
+.mostrar_camara_grabar .reproducir_gif {
+  display: none;
+  padding: 1px 0 1px 1px;
+  width: 827px;
+  height: 431px; }
 
 .mostrar_camara_icono {
   width: 36px;
@@ -124,56 +120,60 @@ html {
           box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
   background-image: url("../atomic_html/assets/camera.svg");
   background-repeat: no-repeat;
-  background-position: center; }
+  background-position: center;
+  cursor: pointer; }
 
 .mostrar_camara_capturar {
+  text-align: center;
   width: 144px;
   height: 36px;
   margin: 0;
   padding: 8px 0 8px 0;
-  text-align: center;
   background: #f7c9f3;
-  border-left: 0px solid #110038;
-  border-right: 1px solid #110038;
+  border-left: 0;
   border-top: 1px solid #110038;
+  border-right: 1px solid #110038;
   border-bottom: 1px solid #110038;
   -webkit-box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
-          box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff; }
+          box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+  cursor: pointer; }
 
 .mostrar_camara_icono_listo {
   width: 36px;
   height: 36px;
-  background: #FF6161;
+  background: #ff6161;
   border: 1px solid #110038;
-  -webkit-box-shadow: inset -1px -1px 0 0 #993A3A, inset 1px 1px 0 0 #ffffff;
-          box-shadow: inset -1px -1px 0 0 #993A3A, inset 1px 1px 0 0 #ffffff;
+  -webkit-box-shadow: inset -1px -1px 0 0 #993a3a, inset 1px 1px 0 0 #ffffff;
+          box-shadow: inset -1px -1px 0 0 #993a3a, inset 1px 1px 0 0 #ffffff;
   background-image: url("../atomic_html/assets/recording.svg");
   background-repeat: no-repeat;
-  background-position: center; }
+  background-position: center;
+  cursor: pointer; }
 
 .mostrar_camara_capturar_listo {
   color: #ffffff;
+  text-align: center;
   width: 144px;
   height: 36px;
   margin: 0;
   padding: 8px 0 8px 0;
-  text-align: center;
-  background: #FF6161;
-  border-left: 0px solid #110038;
-  border-right: 1px solid #110038;
+  background: #ff6161;
+  border-left: 0;
   border-top: 1px solid #110038;
+  border-right: 1px solid #110038;
   border-bottom: 1px solid #110038;
-  -webkit-box-shadow: inset -1px -1px 0 0 #993A3A, inset 1px 1px 0 0 #ffffff;
-          box-shadow: inset -1px -1px 0 0 #993A3A, inset 1px 1px 0 0 #ffffff;
+  -webkit-box-shadow: inset -1px -1px 0 0 #993a3a, inset 1px 1px 0 0 #ffffff;
+          box-shadow: inset -1px -1px 0 0 #993a3a, inset 1px 1px 0 0 #ffffff;
   cursor: pointer; }
 
-.contenedor_finalizar_repetir {
+.contenedor_finalizar_repetir,
+.cancelar_texto {
+  text-align: center;
   width: 144px;
   height: 36px;
   margin: 0;
   margin-right: 14px;
   padding: 8px 0 8px 0;
-  text-align: center;
   background: #ffffff;
   border: 1px solid #110038;
   -webkit-box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
@@ -181,11 +181,11 @@ html {
   cursor: pointer; }
 
 .contenedor_finalizar_subir {
+  text-align: center;
   width: 144px;
   height: 36px;
   margin: 0;
   padding: 8px 0 8px 0;
-  text-align: center;
   background: #f7c9f3;
   border: 1px solid #110038;
   -webkit-box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
@@ -193,12 +193,104 @@ html {
   cursor: pointer; }
 
 .contenedor_reproducir_gif img {
+  /* width: 20px;
+    height: 20px; */
   padding: 5px 6px 5px 8px;
   background: #f7c9f3;
   border: 1px solid #110038;
   -webkit-box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
           box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
   cursor: pointer; }
+
+.img--gif {
+  max-width: 300px;
+  height: 300px; }
+
+.subir_barra {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #b4b4b4;
+  -webkit-box-shadow: inset -2px -2px 0 0 #FFFCFC, inset 2px 2px 0 0 #000000;
+          box-shadow: inset -2px -2px 0 0 #FFFCFC, inset 2px 2px 0 0 #000000;
+  padding-top: 2px;
+  padding-left: 2px;
+  padding-right: 2px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 22px; }
+  .subir_barra .subir_barra_cuadro {
+    width: 10px;
+    height: 18px;
+    border-right: 2px solid #999999; }
+  .subir_barra .subir_barra_cuadro:last-child {
+    border-right: none; }
+  .subir_barra .subir_barra_cuadro--color {
+    background-color: #f7c9f3; }
+
+.subir_texto {
+  font-weight: 600;
+  color: #110038;
+  margin-bottom: 41px; }
+
+.subir_texto2 {
+  color: #110038;
+  opacity: 64%;
+  font-size: 16px; }
+  .subir_texto2 span {
+    text-decoration: line-through; }
+
+.finalizar_img {
+  width: 371px;
+  height: 196px;
+  border: 1px solid #979797;
+  -webkit-box-shadow: inset -2px -2px 0 0 #e6e6e6, inset 2px 2px 0 0 #000000;
+          box-shadow: inset -2px -2px 0 0 #e6e6e6, inset 2px 2px 0 0 #000000;
+  padding: 2px; }
+  .finalizar_img img {
+    width: 365px;
+    height: 190px; }
+
+.finalizar_botones .texto_exito {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 800;
+  color: #110038;
+  margin: 0 0 16px 0; }
+
+.finalizar_botones .finalizar_boton_copiar,
+.finalizar_botones .finalizar_boton_descargar {
+  width: 256px;
+  height: 36px;
+  background: #fff4fd;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+          box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+  text-align: center;
+  padding: 7px 0;
+  margin: 0 0 14px 0;
+  cursor: pointer; }
+
+.finalizar_listo {
+  width: 144px;
+  height: 36px;
+  padding: 7px;
+  float: right;
+  margin: 55px 60px 44px 0;
+  text-align: center;
+  background: #f7c9f3;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+          box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+  cursor: pointer; }
+
+.finalizar_titulo img {
+  cursor: pointer; }
+
+.gif__contenedor {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content; }
 
 .nivel-2 {
   width: 632px;
@@ -246,22 +338,35 @@ html {
   font-family: "Chakra Petch", sans-serif;
   margin-top: 28px; }
 
-.mostrar_camara_titulo {
+.mostrar_camara_titulo,
+.finalizar_titulo {
+  background: -webkit-gradient(linear, right top, left top, from(#f7c9f3), to(#4180f6));
+  background: linear-gradient(to left, #f7c9f3, #4180f6);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: inherit;
-  padding-right: 10px;
-  padding-left: 4px;
-  padding-top: 4px;
-  padding-bottom: 2.6px;
-  height: 24px;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  width: 100%;
+  height: 24px;
+  padding-right: 5px;
+  padding-left: 6px;
+  padding-top: 4.4px;
+  padding-bottom: 2.6px; }
+
+.mostrar_camara_grabar {
+  width: 832px;
+  height: 434px;
+  margin: 8px 17px 0 11px;
+  background: #ffffff;
+  padding: 1px;
+  border: 1px solid #979797;
+  -webkit-box-shadow: inset -2px -2px 0 0 #e6e6e6, inset 2px 2px 0 0 #000000;
+          box-shadow: inset -2px -2px 0 0 #e6e6e6, inset 2px 2px 0 0 #000000; }
 
 .contenedor_capturar {
   display: -webkit-box;
@@ -273,7 +378,7 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 28px 16px 16px 0; }
+  margin: 21px 16px 16px 0; }
 
 .contenedor_capturar_listo {
   display: -webkit-box;
@@ -285,7 +390,7 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 28px 16px 16px 0; }
+  margin: 21px 16px 16px 0; }
 
 .contenedor_finalizar_botones {
   display: -webkit-box;
@@ -297,13 +402,43 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 28px 16px 16px 11px;
+  margin: 21px 16px 16px 11px;
+  height: 36px; }
+
+.contenedor_cancelar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 21px 3px 16px 0px;
   height: 36px; }
 
 .contenedor_repetir_enviar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+
+.contenedor_subir_gif {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 440px;
+  font-family: "Chakra Petch", sans-serif; }
 
 .mostrar_camara_reloj,
 .mostrar_camara_grabando {
@@ -322,6 +457,31 @@ html {
       -ms-flex-pack: justify;
           justify-content: space-between; }
 
+.contenedor_finalizar {
+  width: 700px;
+  height: 200px;
+  margin: 29px 17px 0 24px;
+  padding: 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.finalizar_botones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 40px; }
+
 .gif__contenedor--1 {
   -ms-grid-column-span: 1;
       grid-column-end: span 1; }
@@ -334,7 +494,6 @@ html {
   display: inline-block; }
 
 .crear-gifs {
-  display: none;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -346,8 +505,11 @@ html {
   margin-top: 5.313rem; }
 
 .mostrar_camara {
-  width: 860px;
-  height: 548px;
+  /*  width: 860px; */
+  height: 538px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   background-color: #e6e6e6;
   -webkit-box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff;
           box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff;
@@ -356,8 +518,23 @@ html {
   margin-top: 5.313rem;
   font-family: "Chakra Petch", sans-serif; }
 
+.finalizar_gif {
+  /*  width: 860px; */
+  height: 391px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #e6e6e6;
+  -webkit-box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff;
+          box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5.313rem;
+  font-family: "Chakra Petch", sans-serif;
+  padding: 2px 2px 0px 2px; }
+
 .mis--gifs {
-  display: none;
+  /* display: none; */
   width: 90%;
   margin-left: auto;
   margin-right: auto;
