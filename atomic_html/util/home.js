@@ -11,8 +11,8 @@ let ver_mas2 = document.getElementsByClassName('verMas2')
 let ver_mas3 = document.getElementsByClassName('verMas3')
 let ver_mas4 = document.getElementsByClassName('verMas4')
 let opciones = document.getElementsByClassName('opciones')
-let mostar_opciones = document.getElementById('mostarOpciones')
-let mostar_opciones_texto = document.getElementsByClassName('mostarOpcionesTexto')
+let mostrar_opciones = document.getElementById('mostrarOpciones')
+let mostrar_opciones_texto = document.getElementsByClassName('mostrarOpcionesTexto')
 let buscar_sugerencia_titulo = [];
 
 ///////////////////////
@@ -26,14 +26,19 @@ function cargaDelBody() { // Función para detectar la carga del body y llamar a
 }
 
 // ENDPOINT SUGERENCIAS
-function getSugerencias() {
+async function getSugerencias() {
   const Sugerencias =
-    fetch('https://api.giphy.com/v1/gifs/trending' + '?api_key=' + 'YgKAQyftfAQrFSeqJEBOIt9v7ImEN5D0' + '&limit=10')
+fix
+    await fetch('http://api.giphy.com/v1/gifs/trending' + '?api_key=' + 'YgKAQyftfAQrFSeqJEBOIt9v7ImEN5D0' + '&limit=16')
+
+ master
       .then(response => response.json())
       .then(resData => {
         for (let i = 0; i < resData.data.length; i++) {
           let url_sugerencia = resData.data[i].images.downsized.url
+          let url_tendencia = resData.data[4 + i].images.downsized.url
           let titulo_sugerencia_completo = resData.data[i].title
+          let titulo_tendencia_completo = resData.data[4 + i].title
 
           buscar_sugerencia_titulo.push(resData.data[i].title.split('GIF', 1))
 
@@ -47,27 +52,14 @@ function getSugerencias() {
           }
 
           for (let t = 0; t < gif_tendencia.length; t++) {
-            gif_tendencia[i].src = url_sugerencia
+            gif_tendencia[i].src = url_tendencia
           }
 
           for (let m = i; m < gif_titulo_tendencia.length; m++) {
-            let titulo_sugerencia_final = titulo_sugerencia_completo.split('GIF', 1)// ELIMINAR EL AUTOR DEL TÍTULO DEL GIF
+            let titulo_sugerencia_final = titulo_tendencia_completo.split('GIF', 1)// ELIMINAR EL AUTOR DEL TÍTULO DEL GIF
             gif_titulo_tendencia[m].textContent = `#${titulo_sugerencia_final[0].replace(/ /g, '')} ` // ELIMINAR ESPACIOS EN BLANCO
           }
 
-          // // TAMAÑO DINÁMICO DE LA ETIQUE <img>
-          // if (resData.data[i].images.downsized.width <= 450) {
-          //   gif_tendencia[i].width = 300
-          //   gif_tendencia_contenedor[i].classList.add('gif__contenedor--1')
-          //   gif_tendencia_contenedor[i].classList.remove('gif__contenedor--2')
-
-          // } else if (resData.data[i].images.downsized.width >= 451) {
-          //   gif_tendencia[i].width = 632
-          //   gif_tendencia_contenedor[i].classList.add('gif__contenedor--2')
-          //   gif_tendencia_contenedor[i].classList.remove('gif__contenedor--1')
-          // }
-
-          ///////////////////////
         }
         return resData
       })
@@ -168,17 +160,6 @@ function getTendencias(search) {
             gif_titulo_tendencia[k].textContent = `#${titulo_tendencia_final[0].replace(/ /g, '')} ` // ELIMINAR ESPACIOS EN BLANCO
           }
 
-          // // TAMAÑO DINÁMICO DE LA ETIQUE <img>
-          // if (resData.data[i].images.downsized.width <= 450) {
-          //   gif_tendencia[i].width = 300
-          //   gif_tendencia_contenedor[i].classList.add('gif__contenedor--1')
-          //   gif_tendencia_contenedor[i].classList.remove('gif__contenedor--2')
-
-          // } else if (resData.data[i].images.downsized.width >= 451) {
-          //   gif_tendencia[i].width = 632
-          //   gif_tendencia_contenedor[i].classList.add('gif__contenedor--2')
-          //   gif_tendencia_contenedor[i].classList.remove('gif__contenedor--1')
-          // }
         }
         return resData
       })
@@ -225,10 +206,10 @@ function enviarOpcionesBusqueda(posicion) {
   getTendencias(buscar_autocomepletar.value)
 
   // Mostrando las sugerencias de búsqueda
-  for (let i = 0; i < mostar_opciones_texto.length; i++) {
-    mostar_opciones_texto[i].textContent = opciones[i].value;
-    mostar_opciones.classList.toggle('mostarOpcionesBlock')
-    mostar_opciones.classList.remove('mostarOpciones')
+  for (let i = 0; i < mostrar_opciones_texto.length; i++) {
+    mostrar_opciones_texto[i].textContent = opciones[i].value;
+    mostrar_opciones.classList.toggle('mostrarOpcionesBlock')
+    mostrar_opciones.classList.remove('mostrarOpciones')
   }
 }
 

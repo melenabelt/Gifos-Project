@@ -43,7 +43,7 @@ let mouseout = opcion.addEventListener('mouseout', event => {
 }
 )
 
-// CAPTURAR EL INPUT PARA MOSTAR LAS OPCIONES DE BUSQUEDA
+// CAPTURAR EL INPUT PARA mostrar LAS OPCIONES DE BUSQUEDA
 
 let mostrar = buscar.addEventListener('input', () => {
   opcion.classList.add('busqueda__opciones--mostrar')

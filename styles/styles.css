@@ -219,12 +219,12 @@ ul {
   outline-width: 1px;
   outline-offset: -4px; }
 
-.mostarOpciones {
+.mostrarOpciones {
   display: none; }
 
-.mostarOpcionesBlock {
+.mostrarOpcionesBlock {
   display: block; }
-  .mostarOpcionesBlock p {
+  .mostrarOpcionesBlock p {
     font-family: "Chakra Petch", sans-serif;
     padding: 12px 7px 8px 7px;
     /*     background: #4180f6;
